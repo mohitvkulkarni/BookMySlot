@@ -20,6 +20,7 @@ import CustomerStoreDetail from "./Screens/CustomerStoreDetail";
 import BookingSuccessful from "./Screens/BookingSuccessful";
 import LoginScreen from "./Screens/LoginScreen";
 import SignUpScreen from "./Screens/SignUpScreen";
+import RegistrationSuccessful from "./Screens/RegistrationSuccessful";
 
 function App() {
   return (
@@ -95,6 +96,12 @@ function App() {
             exact
             path="/SignUpScreen"
             component={SignUpScreen}
+          ></Route>
+
+          <Route
+            exact
+            path="/RegistrationSuccessful"
+            component={RegistrationSuccessful}
           ></Route>
         </Switch>
       </div>

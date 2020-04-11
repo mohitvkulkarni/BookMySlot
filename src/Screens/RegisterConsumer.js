@@ -14,7 +14,7 @@ class RegisterConsumer extends Component {
   handleSubmit = () => {
     console.log("Signup handler");
     console.log(this.state.type);
-    this.props.history.push("/");
+    this.props.history.push("/RegistrationSuccessful");
   };
 
   render() {
