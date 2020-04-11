@@ -5,11 +5,6 @@ const Searchbar = () => {
   const options = [
     { name: "Swedish", value: "sv" },
     { name: "English", value: "en" },
-    {
-      type: "group",
-      name: "Group name",
-      items: [{ name: "Spanish", value: "es" }],
-    },
   ];
 
   return (

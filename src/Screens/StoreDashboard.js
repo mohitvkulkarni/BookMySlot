@@ -5,32 +5,40 @@ import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
 import { Link } from "react-router-dom";
+import StatsCard from "../Components/StatsCard";
+import SlotList from "../Components/SlotList";
 
 class StoreDashboard extends React.Component {
-  state = {
-    
-  };
+  state = {};
 
-  componentDidMount() {
-   
-  }
+  componentDidMount() {}
 
-  componentWillUnmount() {
-    
-  }
+  componentWillUnmount() {}
   render() {
     return (
       <div>
         <Layout>
           <Header />
-        <div>
-            <ul>
-                <li>Slot 1</li>
-                <li>Slot 2</li>
-            </ul>
-            <Button></Button>
-             Store Dashboard
-        </div>
+          <div className="row">
+            <div className="col-6">
+              <StatsCard header={"Customers Visited Today"} value={"256"} />
+            </div>
+            <div className="col-6">
+              <StatsCard header={"Customers Expected Today"} value={"512"} />
+            </div>
+          </div>
+          <hr />
+          <div>
+            <h3 style={{ color: "#1f1e2f" }}>
+              <b>Today's Slots</b>
+            </h3>
+            <div className="slotListDiv">
+              <SlotList slotText="10/15" slotTime="9.00 am - 10.00 am" />
+              <SlotList slotText="8/15" slotTime="10.00 am - 11.00 am" />
+              <SlotList slotText="12/15" slotTime="11.00 am - 12.00 pm" />
+              <SlotList slotText="4/15" slotTime="12.00 pm - 1.00 pm" />
+            </div>
+          </div>
         </Layout>
       </div>
     );

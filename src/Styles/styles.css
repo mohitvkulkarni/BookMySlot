@@ -346,6 +346,37 @@ body {
   height: 100vh;
 }
 
+.statsCard {
+  padding: 10px;
+  margin: 15px;
+  background-color: #1f1e2f;
+  box-shadow: 3px 3px 2px #80808082;
+  padding-bottom: 15px;
+}
+
+.statsCardHeader {
+  text-align: center;
+  color: #808080;
+  padding-bottom: 15px;
+}
+
+.slotContainerDiv {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #1f1e2f;
+}
+
+.slotListDiv {
+  overflow-y: auto;
+  height: 40vh;
+}
+
+.statsCardValue {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
 .headerLogo {
   height: 30px;
   width: 30px;

@@ -5,27 +5,25 @@ import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
 import { Link } from "react-router-dom";
+import Searchbar from "../Components/Searchbar";
+import "../Styles/stylesSearchBar.css";
 
 class CustomerDashboard extends React.Component {
-  state = {
-    
-  };
+  state = {};
 
-  componentDidMount() {
-   
-  }
+  componentDidMount() {}
 
-  componentWillUnmount() {
-    
-  }
+  componentWillUnmount() {}
   render() {
     return (
       <div>
         <Layout>
           <Header />
-        <div>
-           Customer Dashboard
-        </div>
+          <div style={{ marginTop: "2rem", textAlign: "initial" }}>
+            <div className="col-12">
+              <Searchbar />
+            </div>
+          </div>
         </Layout>
       </div>
     );
