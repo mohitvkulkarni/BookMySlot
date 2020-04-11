@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import booking from "../assets/images/booking.png";
+import BackButton from "./BackButton";
 
 class Header extends Component {
   render() {
@@ -9,10 +10,24 @@ class Header extends Component {
           className="col-12 header"
           style={{ textAlign: "center", display: "flex" }}
         >
-          <div className="zefi col-12">
-            <img alt="" src={booking} className="headerLogo" />
-            BOOKMYSLOT
-          </div>
+          {!this.props.name ? (
+            <div className="zefi col-12">
+              <img alt="" src={booking} className="headerLogo" />
+              BOOKMYSLOT
+            </div>
+          ) : (
+            <div
+              className="zefi col-12"
+              style={{
+                textAlign: "left",
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <BackButton />
+              {this.props.name}
+            </div>
+          )}
         </div>
       </div>
     );
