@@ -19,7 +19,7 @@ class CustomerDashboard extends React.Component {
     return (
       <div >
         <Layout>
-          <Header />
+          <Header name="Customer Dashboard" headerImage = "customer"/>
           <div style={{ marginTop: "2rem", textAlign: "initial" }}>
             <div className="col-12">
               <Searchbar />

@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import booking from "../assets/images/booking.png";
-import BackButton from "./BackButton";
+import customer from "../assets/images/customer.png";
+import shop from "../assets/images/shop.png";
+import supermarket from "../assets/images/booking.png";
+import doctor from "../assets/images/doctor.png";
 
 class Header extends Component {
   render() {
@@ -18,13 +21,8 @@ class Header extends Component {
           ) : (
             <div
               className="zefi col-12"
-              style={{
-                textAlign: "left",
-                display: "flex",
-                alignItems: "center",
-              }}
             >
-              <BackButton />
+              <img alt="" src={this.props.headerImage} className="headerLogo" />
               {this.props.name}
             </div>
           )}

@@ -18,6 +18,8 @@ import StoreDashboard from "./Screens/StoreDashboard";
 import StoreConfigureSlots from "./Screens/StoreConfigureSlots";
 import CustomerStoreDetail from "./Screens/CustomerStoreDetail";
 import BookingSuccessful from "./Screens/BookingSuccessful";
+import LoginScreen from "./Screens/LoginScreen";
+import SignUpScreen from "./Screens/SignUpScreen";
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
       <div className="App">
         {/* <IsLoading /> */}
         <Switch>
-          <Route exact path="/" component={Login}></Route>
+          <Route exact path="/" component={LoginScreen}></Route>
           <Route
             exact
             path="/RegisterConsumer"
@@ -87,6 +89,12 @@ function App() {
             exact
             path="/BookingSuccessful"
             component={BookingSuccessful}
+          ></Route>
+
+          <Route
+            exact
+            path="/SignUpScreen"
+            component={SignUpScreen}
           ></Route>
         </Switch>
       </div>

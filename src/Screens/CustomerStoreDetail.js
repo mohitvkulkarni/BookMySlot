@@ -79,7 +79,7 @@ class CustomerStoreDetail extends React.Component {
     return (
       <div>
         <Layout>
-          <Header />
+          <Header name="Customer Dashboard"/>
 
           <div>{store[0].name}</div>
           <div>{store[0].address}</div>

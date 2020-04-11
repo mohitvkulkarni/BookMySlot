@@ -11,7 +11,7 @@ class BookingSuccessful extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header name="Customer Dashboard"/>
         <Layout>
           <BackButton path={"/CustomerDashboard"} />
           <div className="headerPages">
