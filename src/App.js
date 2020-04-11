@@ -17,6 +17,7 @@ import CustomerDashboard from "./Screens/CustomerDashboard";
 import StoreDashboard from "./Screens/StoreDashboard";
 import StoreConfigureSlots from "./Screens/StoreConfigureSlots";
 import CustomerStoreDetail from "./Screens/CustomerStoreDetail";
+import BookingSuccessful from "./Screens/BookingSuccessful";
 
 function App() {
   return (
@@ -82,6 +83,11 @@ function App() {
             component={CustomerStoreDetail}
           ></Route>
 
+          <Route
+            exact
+            path="/BookingSuccessful"
+            component={BookingSuccessful}
+          ></Route>
         </Switch>
       </div>
     </Router>

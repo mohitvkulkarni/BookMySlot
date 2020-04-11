@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Button from "../Components/Button";
+import { Link } from "react-router-dom";
+
 
 class CustomerTimeSlot extends Component {
   render() {
@@ -17,9 +19,9 @@ class CustomerTimeSlot extends Component {
             </div>
             <div className="col-5">
               <div className="col-12 centerContent">
+                <Link to = {"/BookingSuccessful"}>
                 <button
                   type="button"
-                  onClick={this.props.onClick ? this.props.onClick : null}
                   style={{
                     backgroundColor: "#5669F0",
                     borderColor: "#5669F0",
@@ -30,6 +32,7 @@ class CustomerTimeSlot extends Component {
                 >
                   BOOK SLOT
                 </button>
+                </Link>
               </div>
             </div>
           </div>

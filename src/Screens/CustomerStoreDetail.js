@@ -4,7 +4,7 @@ import "../Styles/styles.css";
 import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import CustomerTimeSlot from "../Components/CustomerTimeSlot";
 
 class CustomerStoreDetail extends React.Component {
@@ -22,14 +22,17 @@ class CustomerStoreDetail extends React.Component {
             {
               slotTime: "9.00 am - 10.00 am",
               slotAvailability: "10/15",
+              id:1,
             },
             {
               slotTime: "10.00 am - 11.00 am",
               slotAvailability: "4/15",
+              id:2,
             },
             {
               slotTime: "11.00 am - 12.00 am",
               slotAvailability: "1/15",
+              id:3,
             },
           ],
         },
@@ -43,14 +46,17 @@ class CustomerStoreDetail extends React.Component {
             {
               slotTime: "9.00 am - 10.00 am",
               slotAvailability: "10/15",
+              id:1,
             },
             {
               slotTime: "10.00 am - 11.00 am",
               slotAvailability: "4/15",
+              id:2,
             },
             {
               slotTime: "11.00 am - 12.00 am",
               slotAvailability: "1/15",
+              id:3
             },
           ],
         },
@@ -59,6 +65,9 @@ class CustomerStoreDetail extends React.Component {
   }
 
   componentDidMount() {}
+
+  // handleBookButtonClick = () => <Redirect push to="/BookingSuccessful" />
+  
 
   componentWillUnmount() {}
   render() {
@@ -83,9 +92,9 @@ class CustomerStoreDetail extends React.Component {
             </h3>
             <div className="slotListDiv">
               <div className="customerStoreListDiv">
-                {store[0].slotList.map((slot, index) => (
+                {store[0].slotList.map((slot) => (
                   <CustomerTimeSlot
-                    key={index}
+                    key={slot.id}
                     slotAvailability={slot.slotAvailability}
                     slotTime={slot.slotTime}
                   ></CustomerTimeSlot>

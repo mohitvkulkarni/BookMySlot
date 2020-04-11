@@ -27,7 +27,7 @@ class SuccessfullContainer extends React.Component {
           style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
         >
           <div className="col-12 centerContent">
-            <Link to="/Dashboard">
+            <Link to="/CustomerDashboard">
               <button
                 type="button"
                 style={{ color: "#5669F0" }}
