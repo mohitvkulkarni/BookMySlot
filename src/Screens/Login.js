@@ -7,6 +7,8 @@ import web3Obj from "../utils";
 import UserService from "../Services/UserService";
 import CONSTANTS from "../constants";
 import EthScanService from "../Services/EthScanService";
+import SignUpBasic from "../Components/SignUpBasic";
+import LoginComponent from "../Components/LoginComponent";
 
 class Login extends Component {
   state = {
@@ -15,6 +17,7 @@ class Login extends Component {
     userInfo: {},
     buildEnv: CONSTANTS.BuildEnvTorus,
     isLoading: false,
+    isSignUp: false,
   };
 
   componentDidMount() {
@@ -62,59 +65,60 @@ class Login extends Component {
       <div>
         <Layout>
           <Header />
-          <div style={{ marginTop: "2rem", textAlign: "initial" }}>
-            <div className="col-12">
-              <label className="labelLogin" htmlFor="name">
-                Name
-              </label>
-              <input
-                id="name"
-                type="text"
-                value={this.state.amount}
-                className="textInput"
-              />
-            </div>
-            <div className="col-12">
-              <label className="labelLogin" htmlFor="mail">
-                Email
-              </label>
-              <input
-                id="mailId"
-                type="text"
-                value={this.state.amount}
-                className="textInput"
-              />
-            </div>
-            <div className="col-12">
-              <label className="labelLogin" htmlFor="type">
-                Type
-              </label>
-              <select id="type" value={this.state.amount} className="textInput">
-                <option value=""></option>
-                <option value="admin">Police/Admin</option>
-                <option value="store">Store</option>
-                <option value="consumer">Consumer</option>
-              </select>
-            </div>
-            <div className="col-12">
-              <label className="labelLogin" htmlFor="password">
-                Password
-              </label>
-              <input
-                id="password"
-                type="text"
-                value={this.state.amount}
-                className="textInput"
-              />
-            </div>
+          <div>
+            {this.state.isSignUp ? <SignUpBasic /> : <LoginComponent />}
+            {!this.state.isSignUp ? (
+              <div>
+                {this.state.isLoading && <IsLoading />}
+                <Button
+                  label={`Login`}
+                  onClick={this.enableTorus}
+                  color={"#5669F0"}
+                  className="loginButton"
+                />
+                <div style={{ margin: 10 }}>
+                  <span style={{ color: "#1f1e2f" }}>
+                    Not registered?{" "}
+                    <span
+                      style={{
+                        textDecoration: "underline",
+                        textDecorationColor: "#b9c0e7",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => this.setState({ isSignUp: true })}
+                    >
+                      Sign Up
+                    </span>
+                  </span>
+                </div>
+              </div>
+            ) : (
+              <div>
+                {this.state.isLoading && <IsLoading />}
+                <Button
+                  label={`Sign Up`}
+                  onClick={this.enableTorus}
+                  color={"#5669F0"}
+                  className="loginButton"
+                />
+                <div style={{ margin: 10 }}>
+                  <span style={{ color: "#1f1e2f" }}>
+                    Already registered?{" "}
+                    <span
+                      style={{
+                        textDecoration: "underline",
+                        textDecorationColor: "#b9c0e7",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => this.setState({ isSignUp: false })}
+                    >
+                      Login
+                    </span>
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
-          <Button
-            label={`Login`}
-            onClick={this.enableTorus}
-            color={"#5669F0"}
-            className="loginButton"
-          />
-          {this.state.isLoading && <IsLoading />}
         </Layout>
       </div>
     );
