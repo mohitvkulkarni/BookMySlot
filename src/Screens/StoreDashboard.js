@@ -20,18 +20,16 @@ class StoreDashboard extends React.Component {
         <Layout>
           <Header />
           <div className="row">
-            <div className="col-6">
+            <div className="col-6 noSpace">
               <StatsCard header={"Customers Visited Today"} value={"256"} />
             </div>
-            <div className="col-6">
+            <div className="col-6 noSpace">
               <StatsCard header={"Customers Expected Today"} value={"512"} />
             </div>
           </div>
           <hr />
           <div>
-            <h3 style={{ color: "#1f1e2f" }}>
-              <b>Today's Slots</b>
-            </h3>
+            <h3 style={{ color: "#414157" }}>TODAY'S SLOTS</h3>
             <div className="slotListDiv">
               <SlotList slotText="10/15" slotTime="9.00 am - 10.00 am" />
               <SlotList slotText="8/15" slotTime="10.00 am - 11.00 am" />

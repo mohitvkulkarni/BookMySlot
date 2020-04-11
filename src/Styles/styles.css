@@ -74,6 +74,10 @@
   }
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .numberKey {
   font-family: Muli;
   font-style: normal;
@@ -275,7 +279,7 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
 
 .loginButton {
   margin-top: 1rem;
-  width: 50%;
+  width: 70%;
 }
 
 .btnTransaction {
@@ -358,10 +362,8 @@ body {
   margin: 0 auto;
   padding: 0px 0px;
   background-color: #f6f6f6;
-  /* width: 375px; */
   box-shadow: 3px 3px 2px #80808082;
   padding-bottom: 15px;
-  height: 100vh;
 }
 
 .statsCard {
@@ -374,14 +376,22 @@ body {
 
 .statsCardHeader {
   text-align: center;
-  color: #808080;
+  color: #e8bb33;
   padding-bottom: 15px;
 }
 
 .slotContainerDiv {
   padding: 10px;
+  background: #e4ba33;
   text-align: left;
-  border-bottom: 1px solid #1f1e2f;
+  margin: 10px;
+  box-shadow: 2px 2px 2px #1f1e2f;
+  border-radius: 10px;
+}
+
+.slotListText {
+  color: #1f1e2f;
+  font-family: "Montserrat", sans-serif;
 }
 
 .slotListDiv {
@@ -405,7 +415,7 @@ body {
 
 .statsCardValue {
   text-align: center;
-  color: #fff;
+  color: #e4e4e4;
   padding-bottom: 15px;
 }
 
