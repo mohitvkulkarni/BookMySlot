@@ -6,7 +6,7 @@ import Header from "../Components/Header";
 import Layout from "../Components/Layout";
 import { Link } from "react-router-dom";
 
-class StoreDashboard extends React.Component {
+class StoreConfigureSlots extends React.Component {
   state = {
     
   };
@@ -18,39 +18,34 @@ class StoreDashboard extends React.Component {
   componentWillUnmount() {
     
   }
-
-handleClick = () => {
-
-    
-
-}
-
   render() {
     return (
       <div>
         <Layout>
           <Header />
         <div>
-            <ul>
-                <li>Slot 1</li>
-                <li>Slot 2</li>
+           Configure Slots
+        </div>
+
+        <ul>
+                <li>Shop Timing</li>
+                <li>Slot Duration</li>
+                <li>Max. No. of customers in time slot</li>
+                <li>Available goods with Quantity</li>
             </ul>
-            <div>
-             Store Dashboard
-             </div>
-             <Link to={"/StoreConfigureSlots"}>
+
+            <Link to={"/StoreDashboard"}>
              <Button
-                  label={`Configure Slots`}
+                  label={`Submit`}
                   color={"#5669F0"}
                   className="loginButton"
                 />
             </Link>
 
-        </div>
         </Layout>
       </div>
     );
   }
 }
 
-export default StoreDashboard;
+export default StoreConfigureSlots;
