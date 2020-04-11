@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./Screens/Login";
+import "./App.css";
+import Dashboard from "./Screens/Dashboard";
+import Deposits from "./Screens/Deposits";
+import WithdrawFunds from "./Screens/WithdrawFunds";
+import DeopsitsViaScreen from "./Screens/DepositViaScreen";
+import WithdrawToScreen from "./Screens/WithdrawToScreen";
+import AllTransactions from "./Screens/AllTransactions";
+import WithdrawSuccessfull from "./Screens/WithdrawSuccessfull";
+import DepositSuccessfull from "./Screens/DepositSuccessfull";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        {/* <IsLoading /> */}
+        <Switch>
+          <Route exact path="/" component={Login}></Route>
+          <Route exact path="/Deposit" component={Deposits}></Route>
+          <Route exact path="/Withdraw" component={WithdrawFunds}></Route>
+          <Route exact path="/Dashboard" component={Dashboard}></Route>
+          <Route exact path="/DepositVia" component={DeopsitsViaScreen}></Route>
+          <Route
+            exact
+            path="/WithdrawSuccessfull"
+            component={WithdrawSuccessfull}
+          ></Route>
+          <Route
+            exact
+            path="/DepositSuccessfull"
+            component={DepositSuccessfull}
+          ></Route>
+          <Route exact path="/WithdrawTo" component={WithdrawToScreen}></Route>
+          <Route
+            exact
+            path="/ViewTransactions"
+            component={AllTransactions}
+          ></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

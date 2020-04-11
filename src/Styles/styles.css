@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800,900&display=swap");
+
+@font-face {
+  font-family: "Muli", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Muli:300,400&display=swap");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:900&display=swap");
+}
+
+@keyframes backColor {
+  5% {
+    background-image: linear-gradient(to bottom right, var(--blue), white);
+  }
+  10% {
+    background-image: linear-gradient(to bottom right, var(--indigo), white);
+  }
+  15% {
+    background-image: linear-gradient(to bottom right, var(--purple), white);
+  }
+  20% {
+    background-image: linear-gradient(to bottom right, var(--pink), white);
+  }
+  25% {
+    background-image: linear-gradient(to bottom right, var(--red), white);
+  }
+  30% {
+    background-image: linear-gradient(to bottom right, var(--orange), white);
+  }
+  35% {
+    background-image: linear-gradient(to bottom right, var(--yellow), white);
+  }
+  40% {
+    background-image: linear-gradient(to bottom right, var(--green), white);
+  }
+  45% {
+    background-image: linear-gradient(to bottom right, var(--teal), white);
+  }
+  50% {
+    background-image: linear-gradient(to bottom right, var(--cyan), white);
+  }
+  55% {
+    background-image: linear-gradient(to bottom right, var(--white), white);
+  }
+  60% {
+    background-image: linear-gradient(to bottom right, var(--gray), white);
+  }
+  65% {
+    background-image: linear-gradient(to bottom right, var(--gray-dark), white);
+  }
+  70% {
+    background-image: linear-gradient(to bottom right, var(--primary), white);
+  }
+  75% {
+    background-image: linear-gradient(to bottom right, var(--secondary), white);
+  }
+  80% {
+    background-image: linear-gradient(to bottom right, var(--success), white);
+  }
+  85% {
+    background-image: linear-gradient(to bottom right, var(--info), white);
+  }
+  90% {
+    background-image: linear-gradient(to bottom right, var(--warning), white);
+  }
+  95% {
+    background-image: linear-gradient(to bottom right, var(--danger), white);
+  }
+  100% {
+    background-image: linear-gradient(to bottom right, var(--dark), white);
+  }
+}
+
+.numberKey {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  font-feature-settings: "salt" on;
+  color: #4b4b50;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.sliderHeader {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  font-feature-settings: "salt" on;
+  color: #7a7a89;
+}
+
+.sliderValueBold {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  font-feature-settings: "salt" on;
+  color: #1f1e2f;
+}
+
+.sliderValue {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  font-feature-settings: "salt" on;
+  color: #7a7a89;
+  opacity: 0.7;
+}
+
+.sliderDiv {
+  padding: 5px 30px 30px 20px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #5669f0;
+}
+
+div {
+  font-size: 28px;
+  line-height: 41px;
+  color: grey;
+  margin: 0 auto;
+  font-family: "Muli", sans-serif;
+}
+
+.row {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e9e8ec;
+}
+
+.header {
+  background: #ffffff;
+  border: 1px solid #e9e8ec;
+  align-items: center;
+  height: 12vh;
+}
+
+.zefi {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #414157;
+  letter-spacing: 0.05em;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.amount {
+  font-size: 32px;
+  color: #7a7a89;
+}
+
+.typeName {
+  font-size: 20px;
+  color: #414157;
+  line-height: 25px;
+  font-weight: 900;
+}
+
+.typeDescription {
+  font-size: 13px;
+  color: #414157;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.typeImage {
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+  border: 1px solid #75daad;
+  padding: 0px;
+  border-radius: 16px;
+}
+
+.headerPages {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  font-feature-settings: "salt" on;
+  color: #414157;
+  margin: 10px 30px;
+  text-align: left;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.elipse {
+  padding: 40px;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 6px solid #35c635;
+}
+
+.imgTick {
+  height: 50px;
+}
+
+.backButton {
+  background: transparent;
+  border: 0px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 800;
+  padding: 5px 0px;
+}
+
+a:hover {
+  /* color: #0056b3; */
+  text-decoration: none;
+}
+
+.textInput {
+  border-radius: 16px;
+  border: 1px solid #e9e8ec;
+  font-size: x-large;
+  font-weight: 500;
+  text-align: center;
+  height: 60px;
+  margin: 10px 0px;
+  width: 60%;
+}
+
+.labelLogin {
+  font-size: medium;
+  margin: 10px 20px;
+  width: 20%;
+  text-align: right;
+}
+
+.loginButton {
+  margin-top: 5rem;
+  width: 50%;
+}
+
+.btnTransaction {
+  color: #5669f0;
+  border: 1px solid #5669f0;
+  background-color: #fff;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  border-radius: 16px;
+  padding: 10px;
+  width: 150px;
+}
+
+.slick-prev {
+  left: -25px;
+  display: none !important;
+}
+
+.slick-next {
+  left: -25px;
+  display: none !important;
+}
+
+.heightTransaction {
+  height: calc(100% - 450px);
+}
+
+.transactionHeader {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  font-feature-settings: "salt" on;
+  color: #1f1e2f;
+}
+
+.transactionDescp {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  font-feature-settings: "salt" on;
+  color: #7a7a89;
+}
+
+.transactionImg {
+  height: 20px;
+  width: 20px;
+}
+
+.transactionValue {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  align-items: center;
+  text-align: right;
+  font-feature-settings: "salt" on;
+  color: #1f1e2f;
+  padding: 5px;
+}
+
+.transactionCard {
+  padding: 0px 15px 10px 15px;
+}
+
+body {
+  /* background-image: linear-gradient(to bottom right, var(--cyan), white); */
+  background-color: #f9f9fb;
+}
+
+.layout {
+  margin: 0 auto;
+  padding: 0px 0px;
+  background-color: #f6f6f6;
+  /* width: 375px; */
+  box-shadow: 3px 3px 2px #80808082;
+  padding-bottom: 15px;
+  height: 100vh;
+}
+
+.headerLogo {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.card {
+  border: 1px solid #e9e8ec;
+  border-radius: 16px;
+  margin: 0px 30px;
+  padding: 15px 0px;
+}
+
+.currBal {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #7a7a89;
+}
+
+.small-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.percentageChange {
+  padding: 0;
+  margin: 0;
+  color: #7a7a89;
+  font-size: 14px;
+  text-align: right;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.noSpace {
+  padding: 0px;
+  margin: 0px;
+}
+
+.centerContent {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.loadingImg {
+  width: 10%;
+}
