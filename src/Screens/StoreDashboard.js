@@ -39,6 +39,11 @@ class StoreDashboard extends React.Component {
               <SlotList slotText="4/15" slotTime="12.00 pm - 1.00 pm" />
             </div>
           </div>
+          <Button
+            label={`Configure Slots`}
+            color={"#5669F0"}
+            className="loginButton"
+          />
         </Layout>
       </div>
     );

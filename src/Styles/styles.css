@@ -127,11 +127,7 @@
 }
 
 div {
-  font-size: 28px;
-  line-height: 41px;
-  color: grey;
   margin: 0 auto;
-  font-family: "Muli", sans-serif;
 }
 
 .row {
@@ -245,7 +241,6 @@ a:hover {
   text-align: center;
   height: 60px;
   margin: 10px 0px;
-  width: 60%;
 }
 
 .labelLogin {
@@ -256,7 +251,7 @@ a:hover {
 }
 
 .loginButton {
-  margin-top: 5rem;
+  margin-top: 1rem;
   width: 50%;
 }
 
@@ -368,7 +363,16 @@ body {
 
 .slotListDiv {
   overflow-y: auto;
-  height: 40vh;
+  height: 35vh;
+}
+
+.rc-time-picker-input {
+  height: 40px !important;
+  font-size: 18px !important;
+}
+
+.rc-time-picker-clear {
+  top: 8px !important;
 }
 
 .statsCardValue {
