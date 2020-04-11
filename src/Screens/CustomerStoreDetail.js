@@ -71,39 +71,28 @@ class CustomerStoreDetail extends React.Component {
       <div>
         <Layout>
           <Header />
-          
-            <div>{store[0].name}</div>
-            <div>{store[0].address}</div>
-            <div>{store[0].contact}</div>
-            <div>{store[0].type}</div>
-       
 
+          <div>{store[0].name}</div>
+          <div>{store[0].address}</div>
+          <div>{store[0].contact}</div>
+          <div>{store[0].type}</div>
 
-
-
-            <div>
+          <div>
             <h3 style={{ color: "#1f1e2f" }}>
               <b>Today's Slots</b>
             </h3>
             <div className="slotListDiv">
-              
-            <div className="customerStoreListDiv">
-            {store[0].slotList.map((slot, index) => (
-                <CustomerTimeSlot
-                  key={index}
-                  slotAvailability={slot.slotAvailability}
-                  slotTime={slot.slotTime}
-                ></CustomerTimeSlot>
-            
-            ))}
-          </div>
-
+              <div className="customerStoreListDiv">
+                {store[0].slotList.map((slot, index) => (
+                  <CustomerTimeSlot
+                    key={index}
+                    slotAvailability={slot.slotAvailability}
+                    slotTime={slot.slotTime}
+                  ></CustomerTimeSlot>
+                ))}
+              </div>
             </div>
           </div>
-
-
-
-
         </Layout>
       </div>
     );
