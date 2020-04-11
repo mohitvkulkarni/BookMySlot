@@ -40,6 +40,16 @@ class Login extends Component {
   handleSignUp = () => {
     console.log("Signup handler");
     console.log(this.state.type);
+
+    if (this.state.type == "store") {
+        this.props.history.push("/RegisterStore");
+      } else if (this.state.type == "customer") {
+        this.props.history.push("/RegisterConsumer");
+      } else {
+        this.props.history.push("/RegisterConsumer");
+      }
+
+
   };
 
   render() {
