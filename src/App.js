@@ -10,6 +10,8 @@ import WithdrawToScreen from "./Screens/WithdrawToScreen";
 import AllTransactions from "./Screens/AllTransactions";
 import WithdrawSuccessfull from "./Screens/WithdrawSuccessfull";
 import DepositSuccessfull from "./Screens/DepositSuccessfull";
+import RegisterConsumer from "./Components/RegisterConsumer";
+import RegisterStore from "./Components/RegisterStore";
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
         {/* <IsLoading /> */}
         <Switch>
           <Route exact path="/" component={Login}></Route>
+          <Route
+            exact
+            path="/RegisterConsumer"
+            component={RegisterConsumer}
+          ></Route>
+          <Route exact path="/RegisterStore" component={RegisterStore}></Route>
           <Route exact path="/Deposit" component={Deposits}></Route>
           <Route exact path="/Withdraw" component={WithdrawFunds}></Route>
           <Route exact path="/Dashboard" component={Dashboard}></Route>
