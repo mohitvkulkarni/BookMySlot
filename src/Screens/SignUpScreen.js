@@ -106,7 +106,7 @@ class Login extends Component {
                 </label>
                 <input
                   id="password"
-                  type="text"
+                  type="password"
                   name="password"
                   value={this.state.password}
                   className="textInput"

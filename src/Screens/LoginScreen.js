@@ -91,7 +91,7 @@ class LoginScreen extends Component {
                 </label>
                 <input
                   id="password"
-                  type="text"
+                  type="password"
                   name="password"
                   value={this.state.password}
                   onChange={this.handlePasswordChange}
