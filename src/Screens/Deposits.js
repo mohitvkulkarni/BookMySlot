@@ -52,7 +52,7 @@ class Deposits extends React.Component {
           <Button
             label={`Deposit`}
             onClick={this.onDepositClick}
-            color={"#5669F0"}
+            color={"#333d79ff"}
           />
         </Layout>
       </div>

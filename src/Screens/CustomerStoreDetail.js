@@ -79,7 +79,7 @@ class CustomerStoreDetail extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Customer Dashboard"/>
+          <Header name="Customer Dashboard" />
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="cardTile col-11 row">
               <div className="col-4 centerDiv">
@@ -94,7 +94,7 @@ class CustomerStoreDetail extends React.Component {
             </div>
           </div>
           <div>
-            <h3 style={{ color: "#414157" }}>AVAILABLE SLOTS</h3>
+            <h3 style={{ color: "#333d79ff" }}>AVAILABLE SLOTS</h3>
             <div className="slotListDiv">
               <div className="customerStoreListDiv">
                 {store[0].slotList.map((slot) => (

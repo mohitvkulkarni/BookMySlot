@@ -17,20 +17,18 @@ class CustomerDashboard extends React.Component {
   componentWillUnmount() {}
   render() {
     return (
-      <div >
+      <div>
         <Layout>
-          <Header name="Customer Dashboard" headerImage = "customer"/>
+          <Header name="Customer Dashboard" headerImage="customer" />
           <div style={{ marginTop: "2rem", textAlign: "initial" }}>
             <div className="col-12">
               <Searchbar />
-
             </div>
             <hr />
             <div>
-                <CustomerStoreList></CustomerStoreList>
+              <CustomerStoreList></CustomerStoreList>
             </div>
-            </div>
-    
+          </div>
         </Layout>
       </div>
     );

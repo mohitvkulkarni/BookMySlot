@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 class SuccessfullContainer extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ padding: 50 }}>
         <div
           className="row card"
           style={{
             padding: 60,
             borderBottomLeftRadius: 0,
-            borderBottomRightRadius: 0
+            borderBottomRightRadius: 0,
           }}
         >
           <div
@@ -30,7 +30,7 @@ class SuccessfullContainer extends React.Component {
             <Link to="/CustomerDashboard">
               <button
                 type="button"
-                style={{ color: "#5669F0" }}
+                style={{ color: "#333d79ff" }}
                 className="btn btn-link"
               >
                 <u>Go to dashboard</u>

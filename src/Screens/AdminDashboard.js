@@ -42,17 +42,36 @@ class AdminDashboard extends React.Component {
             className="row"
             style={{ padding: 10, justifyContent: "center" }}
           >
-            <select
-              id="type"
-              value={this.state.amount}
-              style={{ width: 150, padding: 10 }}
-              className="textInput marginHorizontal"
-            >
-              <option value="">Type</option>
-              <option value="store">Store</option>
-              <option value="consumer">Consumer</option>
-            </select>
             <Searchbar />
+          </div>
+          <div className="row">
+            <div className="col-6 noSpace">
+              <button
+                className="btnTransaction"
+                style={{
+                  float: "right",
+                  borderTopRightRadius: 0,
+                  borderBottomRightRadius: 0,
+                  backgroundColor: "#d3d3d3",
+                }}
+                type="button"
+              >
+                Store
+              </button>
+            </div>
+            <div className="col-6 noSpace">
+              <button
+                className="btnTransaction"
+                style={{
+                  float: "left",
+                  borderTopLeftRadius: 0,
+                  borderBottomLeftRadius: 0,
+                }}
+                type="button"
+              >
+                Consumer
+              </button>
+            </div>
           </div>
         </Layout>
       </div>

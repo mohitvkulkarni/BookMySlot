@@ -83,13 +83,13 @@ class WithdrawFunds extends React.Component {
             </div>
             <div className="col-12">
               <span style={{ fontSize: 20 }}>Balance</span>{" "}
-              <span style={{ fontSize: 25, color: "#1f1e2f" }}>
+              <span style={{ fontSize: 25, color: "#333d79ff" }}>
                 $23.93209232
               </span>
             </div>
           </div>
           <NumberInput onInputChange={this.onInputChange} />
-          <WithdrawButton onClick={this.onWithdrawClick} color={"#5669F0"} />
+          <WithdrawButton onClick={this.onWithdrawClick} color={"#333d79ff"} />
           <Button label={"Withdraw"} fontColor={"#7A7A89"} color={"#E9E8EC"} />
         </Layout>
       </div>

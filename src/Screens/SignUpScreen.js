@@ -42,14 +42,12 @@ class Login extends Component {
     console.log(this.state.type);
 
     if (this.state.type == "store") {
-        this.props.history.push("/RegisterStore");
-      } else if (this.state.type == "customer") {
-        this.props.history.push("/RegisterConsumer");
-      } else {
-        this.props.history.push("/RegisterConsumer");
-      }
-
-
+      this.props.history.push("/RegisterStore");
+    } else if (this.state.type == "customer") {
+      this.props.history.push("/RegisterConsumer");
+    } else {
+      this.props.history.push("/RegisterConsumer");
+    }
   };
 
   render() {
@@ -122,11 +120,11 @@ class Login extends Component {
               <Button
                 label={`Sign Up`}
                 onClick={this.handleSignUp}
-                color={"#5669F0"}
+                color={"#333d79ff"}
                 className="loginButton"
               />
               <div style={{ margin: 10 }}>
-                <span style={{ color: "#1f1e2f" }}>
+                <span style={{ color: "#333d79ff" }}>
                   Already registered?{" "}
                   <span
                     style={{

@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,800,900&display=swap");
-
-@font-face {
-  font-family: "Muli", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Muli:300,400&display=swap");
-}
 
 @font-face {
   font-family: "Montserrat", sans-serif;
@@ -79,7 +73,7 @@ body {
 }
 
 .numberKey {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -90,8 +84,13 @@ body {
   cursor: pointer;
 }
 
+b,
+strong {
+  font-weight: 400;
+}
+
 .sliderHeader {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -101,17 +100,17 @@ body {
 }
 
 .sliderValueBold {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
   font-feature-settings: "salt" on;
-  color: #1f1e2f;
+  color: #333d79ff;
 }
 
 .sliderValue {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -127,7 +126,7 @@ body {
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #5669f0;
+  color: #333d79ff;
 }
 
 div {
@@ -152,10 +151,10 @@ div {
 
 .zefi {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  color: #414157;
+  color: #333d79ff;
   letter-spacing: 0.05em;
   padding-left: 0px;
   margin-left: 0px;
@@ -168,14 +167,14 @@ div {
 
 .typeName {
   font-size: 20px;
-  color: #414157;
+  color: #333d79ff;
   line-height: 25px;
   font-weight: 900;
 }
 
 .typeDescription {
   font-size: 13px;
-  color: #414157;
+  color: #333d79ff;
   line-height: 20px;
   font-weight: 600;
 }
@@ -190,14 +189,14 @@ div {
 }
 
 .headerPages {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 28px;
   line-height: 35px;
   text-align: center;
   font-feature-settings: "salt" on;
-  color: #414157;
+  color: #333d79ff;
   margin: 10px 30px;
   text-align: left;
 }
@@ -224,9 +223,10 @@ div {
 .backButton {
   background: transparent;
   border: 0px;
+
   font-weight: bold;
   font-size: larger;
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 800;
   padding: 5px 0px;
@@ -240,11 +240,13 @@ a:hover {
 .textInput {
   border-radius: 16px;
   border: 1px solid #e9e8ec;
-  font-size: x-large;
+  font-size: large;
   font-weight: 500;
   text-align: center;
   height: 60px;
   margin: 10px 0px;
+  width: 60%;
+  color: #1b1e23;
 }
 
 .marginHorizontal {
@@ -260,14 +262,14 @@ div.horizontalSlotRow::-webkit-scrollbar {
   height: 3px;
 }
 div.horizontalSlotRow::-webkit-scrollbar-thumb {
-  background: #1f1e2f;
+  background: #333d79ff;
 }
 div.horizontalSlotRow::-webkit-scrollbar-track {
   background: #dadada;
 }
 
 .borderBottom {
-  border-bottom: 1px solid #1f1e2f;
+  border-bottom: 1px solid #333d79ff;
 }
 
 .labelLogin {
@@ -275,6 +277,7 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
   margin: 10px 20px;
   width: 20%;
   text-align: right;
+  color: #1b1e23;
 }
 
 .loginButton {
@@ -282,18 +285,22 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
   width: 70%;
 }
 
+h3 {
+  font-weight: 400;
+}
+
 .btnTransaction {
-  color: #5669f0;
-  border: 1px solid #5669f0;
+  color: #333d79ff;
+  border: 1px solid #333d79ff;
   background-color: #fff;
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 23px;
   border-radius: 16px;
   padding: 10px;
-  width: 150px;
+  width: 90%;
 }
 
 .slick-prev {
@@ -311,18 +318,18 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
 }
 
 .transactionHeader {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   align-items: center;
   font-feature-settings: "salt" on;
-  color: #1f1e2f;
+  color: #333d79ff;
 }
 
 .transactionDescp {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -337,7 +344,7 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
 }
 
 .transactionValue {
-  font-family: Muli;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -345,7 +352,7 @@ div.horizontalSlotRow::-webkit-scrollbar-track {
   align-items: center;
   text-align: right;
   font-feature-settings: "salt" on;
-  color: #1f1e2f;
+  color: #333d79ff;
   padding: 5px;
 }
 
@@ -368,7 +375,7 @@ body {
 }
 
 a {
-  color: #1f1e2f;
+  color: #333d79ff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -376,28 +383,29 @@ a {
 .statsCard {
   padding: 10px;
   margin: 15px;
-  background-color: #1f1e2f;
+  background-color: #333d79ff;
   box-shadow: 3px 3px 2px #80808082;
   padding-bottom: 15px;
+  height: 25vh;
 }
 
 .statsCardHeader {
   text-align: center;
-  color: #e8bb33;
+  color: #dee2e6;
   padding-bottom: 15px;
 }
 
 .slotContainerDiv {
   padding: 10px;
-  background: #e4ba33;
+  background: #d3d3d3;
   text-align: left;
   margin: 10px;
-  box-shadow: 2px 2px 2px #1f1e2f;
+  box-shadow: 2px 2px 2px #00000094;
   border-radius: 10px;
 }
 
 .slotListText {
-  color: #1f1e2f;
+  color: #1e1b23;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -436,7 +444,7 @@ a {
   border: 1px solid #e9e8ec;
   padding: 15px;
   margin: 20px 10px;
-  box-shadow: 2px 2px 2px #1f1e2f82;
+  box-shadow: 2px 2px 2px #333d79ff82;
 }
 
 .centerDiv {
@@ -481,12 +489,20 @@ a {
   padding: 0px 30px;
 }
 
+input:focus {
+  outline: none;
+}
+
+select:focus {
+  outline: none;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 3px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f1e2f;
+  background: #333d79ff;
 }
 ::-webkit-scrollbar-track {
   background: #dadada;

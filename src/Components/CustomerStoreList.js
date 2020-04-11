@@ -31,7 +31,7 @@ class CustomerStoreList extends React.Component {
         <div>
           <div className="row">
             <div>
-              <h3 style={{ color: "#414157" }}>AVAILABLE STORES</h3>
+              <h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>
             </div>
           </div>
           <div className="customerStoreListDiv">

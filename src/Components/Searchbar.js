@@ -17,7 +17,7 @@ const Searchbar = () => {
   // );
 
   return (
-    <div className="marginHorizontal">
+    <div style={{ margin: 15 }}>
       <SearchInput className="search-input" onChange={searchUpdated} />
       {/* {filteredEmails.map((email) => {
         return (

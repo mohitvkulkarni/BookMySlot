@@ -11,15 +11,11 @@ class BookingSuccessful extends React.Component {
   render() {
     return (
       <div>
-        <Header name="Customer Dashboard"/>
         <Layout>
-          <BackButton path={"/CustomerDashboard"} />
-          <div className="headerPages">
-            Booking <br /> Successful
-          </div>
-          <div>
-              Your Unique ID for this booking is ADAJH6.
-          </div>
+          <Header name="Booking Successful!" />
+          <br />
+          <br />
+          <div>Your Unique ID for this booking is ADAJH6.</div>
           <SuccessfullContainer borderColor={"#35c635"} imgPath={tickDeposit} />
         </Layout>
       </div>

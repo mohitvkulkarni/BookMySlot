@@ -8,42 +8,36 @@ import LoginComponent from "../Components/LoginComponent";
 
 class Login extends Component {
   state = {
-    loginList:[
+    loginList: [
       {
         email: "admin@xyz.com",
         password: "admin123",
-        userType: "admin"
+        userType: "admin",
       },
       {
         email: "customer@xyz.com",
         password: "customer123",
-        userType: "customer"
+        userType: "customer",
       },
       {
         email: "store@xyz.com",
         password: "store123",
-        userType: "store"
-      }
+        userType: "store",
+      },
     ],
     isLoading: false,
     isSignUp: false,
   };
 
-  componentDidMount() {
-  
-  }
+  componentDidMount() {}
 
-  getUserInfo = async () => {
-    
-  };
-   
-
+  getUserInfo = async () => {};
 
   render() {
     return (
       <div>
         <Layout>
-          <Header/>
+          <Header />
           <div>
             {this.state.isSignUp ? <SignUpBasic /> : <LoginComponent />}
             {!this.state.isSignUp ? (
@@ -51,12 +45,12 @@ class Login extends Component {
                 {this.state.isLoading && <IsLoading />}
                 <Button
                   label={`Login`}
-                  color={"#5669F0"}
+                  color={"#333d79ff"}
                   onClick={this.handleLogin}
                   className="loginButton"
                 />
                 <div style={{ margin: 10 }}>
-                  <span style={{ color: "#1f1e2f" }}>
+                  <span style={{ color: "#1b1e23" }}>
                     Not registered?{" "}
                     <span
                       style={{
@@ -76,11 +70,11 @@ class Login extends Component {
                 {this.state.isLoading && <IsLoading />}
                 <Button
                   label={`Sign Up`}
-                  color={"#5669F0"}
+                  color={"#333d79ff"}
                   className="loginButton"
                 />
                 <div style={{ margin: 10 }}>
-                  <span style={{ color: "#1f1e2f" }}>
+                  <span style={{ color: "#1b1e23" }}>
                     Already registered?{" "}
                     <span
                       style={{

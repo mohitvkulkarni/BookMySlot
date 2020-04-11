@@ -18,7 +18,7 @@ class StoreDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header />
+          <Header name={"Store Dashboard"} />
           <div className="row">
             <div className="col-6 noSpace">
               <StatsCard header={"Customers Visited Today"} value={"256"} />
@@ -29,7 +29,9 @@ class StoreDashboard extends React.Component {
           </div>
           <hr />
           <div>
-            <h3 style={{ color: "#414157" }}>TODAY'S SLOTS</h3>
+            <h3 style={{ color: "#333d79ff" }}>
+              <b>TODAY'S SLOTS</b>
+            </h3>
             <div className="slotListDiv">
               <SlotList slotText="10/15" slotTime="9.00 am - 10.00 am" />
               <SlotList slotText="8/15" slotTime="10.00 am - 11.00 am" />
@@ -40,7 +42,7 @@ class StoreDashboard extends React.Component {
           <Link to={"/StoreConfigureSlots"}>
             <Button
               label={`Configure Slots`}
-              color={"#5669F0"}
+              color={"#333d79ff"}
               className="loginButton"
             />
           </Link>

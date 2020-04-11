@@ -18,7 +18,7 @@ class WithdrawSuccessfull extends React.Component {
             Withdraw <br /> Successfull
           </div>
           <SuccessfullContainer
-            borderColor={"#5669F0"}
+            borderColor={"#333d79ff"}
             imgPath={tickWithdraw}
           />
         </Layout>

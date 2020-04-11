@@ -21,8 +21,8 @@ class CustomerTimeSlot extends Component {
                 <button
                   type="button"
                   style={{
-                    backgroundColor: "#414157",
-                    borderColor: "#414157",
+                    backgroundColor: "#333d79ff",
+                    borderColor: "#333d79ff",
                     padding: 10,
                     color: "#fff",
                   }}

@@ -18,9 +18,9 @@ class StoreConfigureSlots extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Store Dashboard"/>
+          <Header name="Store Dashboard" />
           <div style={{ paddingTop: 20 }}>
-            <h3 style={{ color: "#1f1e2f" }}>
+            <h3 style={{ color: "#333d79ff" }}>
               <b>Configure Slots</b>
             </h3>
             <div className="row" style={{ textAlign: "left" }}>
@@ -68,7 +68,7 @@ class StoreConfigureSlots extends React.Component {
             <Link to={"/StoreDashboard"}>
               <Button
                 label={`Submit`}
-                color={"#5669F0"}
+                color={"#333d79ff"}
                 className="loginButton"
               />
             </Link>

@@ -104,11 +104,11 @@ class LoginScreen extends Component {
               <Button
                 label={`Login`}
                 onClick={this.handleLogin}
-                color={"#5669F0"}
+                color={"#333d79ff"}
                 className="loginButton"
               />
               <div style={{ margin: 10 }}>
-                <span style={{ color: "#1f1e2f" }}>
+                <span style={{ color: "#333d79ff" }}>
                   Not registered?{" "}
                   <span
                     style={{

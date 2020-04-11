@@ -52,7 +52,7 @@ class Dashboard extends React.Component {
                 </div>
                 <div
                   className="col-12"
-                  style={{ color: "#414157", padding: 0, marginBottom: 15 }}
+                  style={{ color: "#333d79ff", padding: 0, marginBottom: 15 }}
                 >
                   $0.122325
                 </div>
@@ -66,7 +66,7 @@ class Dashboard extends React.Component {
                     {this.state.apy}% APR
                   </div>
                   <div className="col-6 small-text percentageChange">
-                    {/* <span style={{ fontWeight: "bold", color: "#414157" }}>
+                    {/* <span style={{ fontWeight: "bold", color: "#333d79ff" }}>
                     9%
                   </span>{" "}
                   than yesterday */}
@@ -79,7 +79,7 @@ class Dashboard extends React.Component {
             <div className="col-12" style={{ textAlign: "left" }}>
               <div className="col-12 currBal">Current balance</div>
               <div className="col-12 amount">
-                <span style={{ color: "#1F1E2F" }}>
+                <span style={{ color: "#333d79ff" }}>
                   ${UserService.getBalance()}
                 </span>
               </div>
@@ -92,10 +92,10 @@ class Dashboard extends React.Component {
           </div>
           <div style={{ marginTop: 30 }}>
             <Link to="/DepositVia">
-              <Button label={`Deposit`} color={"#5669F0"} />
+              <Button label={`Deposit`} color={"#333d79ff"} />
             </Link>
             <Link to="/WithdrawTo">
-              <WithdrawButton color={"#5669F0"} />
+              <WithdrawButton color={"#333d79ff"} />
             </Link>
           </div>
         </Layout>
