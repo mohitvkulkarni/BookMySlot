@@ -1,12 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
-import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
-import { Link } from "react-router-dom";
 import StatsCard from "../Components/StatsCard";
 import Searchbar from "../Components/Searchbar";
+import consumer from "../assets/images/consumer.png";
+import store from "../assets/images/store.png";
 
 class AdminDashboard extends React.Component {
   state = {};
@@ -56,6 +56,11 @@ class AdminDashboard extends React.Component {
                 }}
                 type="button"
               >
+                <img
+                  src={store}
+                  alt=""
+                  style={{ marginRight: 10, height: 30 }}
+                />
                 Store
               </button>
             </div>
@@ -70,6 +75,11 @@ class AdminDashboard extends React.Component {
                 type="button"
               >
                 Consumer
+                <img
+                  src={consumer}
+                  alt=""
+                  style={{ marginLeft: 10, height: 30 }}
+                />
               </button>
             </div>
           </div>

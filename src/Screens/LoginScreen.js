@@ -3,12 +3,7 @@ import Layout from "../Components/Layout";
 import Button from "../Components/Button";
 import Header from "../Components/Header";
 import IsLoading from "../Components/IsLoading";
-import web3Obj from "../utils";
-import UserService from "../Services/UserService";
-import CONSTANTS from "../constants";
-import EthScanService from "../Services/EthScanService";
-import SignUpBasic from "../Components/SignUpBasic";
-import LoginComponent from "../Components/LoginComponent";
+import enter from "../assets/images/enter.png";
 
 class LoginScreen extends Component {
   constructor(props) {
@@ -70,7 +65,13 @@ class LoginScreen extends Component {
         <Layout>
           <Header />
           <div>
-            <div style={{ marginTop: "2rem", textAlign: "initial" }}>
+            <div
+              className="row"
+              style={{ marginTop: "2rem", textAlign: "initial" }}
+            >
+              {/* <div className="centerDivs">
+                <img src={enter} alt="" height={150} style={{ margin: 10 }} />
+              </div> */}
               <div className="col-12">
                 <label className="labelLogin" htmlFor="mail">
                   Email
@@ -99,7 +100,7 @@ class LoginScreen extends Component {
               </div>
             </div>
 
-            <div>
+            <div style={{ marginTop: "5rem" }}>
               {this.state.isLoading && <IsLoading />}
               <Button
                 label={`Login`}

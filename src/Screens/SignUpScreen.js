@@ -41,9 +41,9 @@ class Login extends Component {
     console.log("Signup handler");
     console.log(this.state.type);
 
-    if (this.state.type == "store") {
+    if (this.state.type === "store") {
       this.props.history.push("/RegisterStore");
-    } else if (this.state.type == "customer") {
+    } else if (this.state.type === "customer") {
       this.props.history.push("/RegisterConsumer");
     } else {
       this.props.history.push("/RegisterConsumer");
@@ -132,7 +132,7 @@ class Login extends Component {
                       textDecorationColor: "#b9c0e7",
                       cursor: "pointer",
                     }}
-                    onClick={() => this.props.history.push("/LoginScreen")}
+                    onClick={() => this.props.history.push("/")}
                   >
                     Login
                   </span>

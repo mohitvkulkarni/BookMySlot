@@ -370,7 +370,7 @@ body {
   padding: 0px 0px;
   background-color: #f6f6f6;
   box-shadow: 3px 3px 2px #80808082;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   min-height: 100vh;
 }
 
@@ -444,7 +444,7 @@ a {
   border: 1px solid #e9e8ec;
   padding: 15px;
   margin: 20px 10px;
-  box-shadow: 2px 2px 2px #333d79ff82;
+  box-shadow: 2px 2px 2px #333d79ff;
 }
 
 .centerDiv {

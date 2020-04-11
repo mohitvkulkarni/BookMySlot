@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
 import CustomerStore from "./CustomerStore";
 import { Link } from "react-router-dom";
+import shop from "../assets/images/shop.png";
+import doctor from "../assets/images/doctor.png";
 
 class CustomerStoreList extends React.Component {
   constructor(props) {
@@ -14,12 +16,14 @@ class CustomerStoreList extends React.Component {
           address: "Gali no. 16, Boriyabandar",
           type: "Grocery Store",
           id: 1,
+          img: shop,
         },
         {
           name: "Mohit Medical Store",
           address: "Gali no. 18, Boriyabandar",
           type: "Medical Store",
           id: 2,
+          img: doctor,
         },
       ],
     };
@@ -42,6 +46,7 @@ class CustomerStoreList extends React.Component {
                   name={store.name}
                   address={store.address}
                   type={store.type}
+                  img={store.img}
                 ></CustomerStore>
               </Link>
             ))}
