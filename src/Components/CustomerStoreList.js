@@ -31,14 +31,11 @@ class CustomerStoreList extends React.Component {
         <div>
           <div className="row">
             <div>
-              <h3 style={{ color: "#1f1e2f" }}>
-                <b>Available Stores</b>
-              </h3>
+              <h3 style={{ color: "#414157" }}>AVAILABLE STORES</h3>
             </div>
           </div>
           <div className="customerStoreListDiv">
             {this.state.stores.map((store) => (
-
               <Link to={`/CustomerStoreDetail/${store.id}`}>
                 <CustomerStore
                   key={store.id}

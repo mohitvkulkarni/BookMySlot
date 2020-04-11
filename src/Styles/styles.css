@@ -233,7 +233,7 @@ div {
 }
 
 a:hover {
-  /* color: #0056b3; */
+  color: #000;
   text-decoration: none;
 }
 
@@ -364,6 +364,13 @@ body {
   background-color: #f6f6f6;
   box-shadow: 3px 3px 2px #80808082;
   padding-bottom: 15px;
+  min-height: 100vh;
+}
+
+a {
+  color: #1f1e2f;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .statsCard {
@@ -410,7 +417,6 @@ body {
 
 .customerStoreListDiv {
   overflow-y: auto;
-  height: 40vh;
 }
 
 .statsCardValue {
@@ -426,11 +432,17 @@ body {
   margin-right: 15px;
 }
 
-.card {
+.cardTile {
   border: 1px solid #e9e8ec;
-  border-radius: 16px;
-  margin: 0px 30px;
-  padding: 15px 0px;
+  padding: 15px;
+  margin: 20px 10px;
+  box-shadow: 2px 2px 2px #1f1e2f82;
+}
+
+.centerDiv {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .currBal {
@@ -471,18 +483,14 @@ body {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 3px;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #1f1e2f;
 }
-
+::-webkit-scrollbar-track {
+  background: #dadada;
+}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;

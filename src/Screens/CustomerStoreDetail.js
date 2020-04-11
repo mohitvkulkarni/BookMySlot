@@ -6,6 +6,7 @@ import Header from "../Components/Header";
 import Layout from "../Components/Layout";
 import { Link, Redirect } from "react-router-dom";
 import CustomerTimeSlot from "../Components/CustomerTimeSlot";
+import supermarket from "../assets/images/supermarket.png";
 
 class CustomerStoreDetail extends React.Component {
   constructor(props) {
@@ -22,17 +23,17 @@ class CustomerStoreDetail extends React.Component {
             {
               slotTime: "9.00 am - 10.00 am",
               slotAvailability: "10/15",
-              id:1,
+              id: 1,
             },
             {
               slotTime: "10.00 am - 11.00 am",
               slotAvailability: "4/15",
-              id:2,
+              id: 2,
             },
             {
               slotTime: "11.00 am - 12.00 am",
               slotAvailability: "1/15",
-              id:3,
+              id: 3,
             },
           ],
         },
@@ -46,17 +47,17 @@ class CustomerStoreDetail extends React.Component {
             {
               slotTime: "9.00 am - 10.00 am",
               slotAvailability: "10/15",
-              id:1,
+              id: 1,
             },
             {
               slotTime: "10.00 am - 11.00 am",
               slotAvailability: "4/15",
-              id:2,
+              id: 2,
             },
             {
               slotTime: "11.00 am - 12.00 am",
               slotAvailability: "1/15",
-              id:3
+              id: 3,
             },
           ],
         },
@@ -67,7 +68,6 @@ class CustomerStoreDetail extends React.Component {
   componentDidMount() {}
 
   // handleBookButtonClick = () => <Redirect push to="/BookingSuccessful" />
-  
 
   componentWillUnmount() {}
   render() {
@@ -79,17 +79,22 @@ class CustomerStoreDetail extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Customer Dashboard"/>
-
-          <div>{store[0].name}</div>
-          <div>{store[0].address}</div>
-          <div>{store[0].contact}</div>
-          <div>{store[0].type}</div>
-
+          <Header />
+          <div className="row" style={{ justifyContent: "center" }}>
+            <div className="cardTile col-11 row">
+              <div className="col-4 centerDiv">
+                <img alt="" src={supermarket} style={{ height: 100 }} />
+              </div>
+              <div className="col-7" style={{ textAlign: "left" }}>
+                <div>{store[0].name}</div>
+                <div>{store[0].address}</div>
+                <div>{store[0].contact}</div>
+                <div>{store[0].type}</div>
+              </div>
+            </div>
+          </div>
           <div>
-            <h3 style={{ color: "#1f1e2f" }}>
-              <b>Today's Slots</b>
-            </h3>
+            <h3 style={{ color: "#414157" }}>AVAILABLE SLOTS</h3>
             <div className="slotListDiv">
               <div className="customerStoreListDiv">
                 {store[0].slotList.map((slot) => (
