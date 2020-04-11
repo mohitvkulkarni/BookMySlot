@@ -16,6 +16,7 @@ import AdminDashboard from "./Screens/AdminDashboard";
 import CustomerDashboard from "./Screens/CustomerDashboard";
 import StoreDashboard from "./Screens/StoreDashboard";
 import StoreConfigureSlots from "./Screens/StoreConfigureSlots";
+import CustomerStoreDetail from "./Screens/CustomerStoreDetail";
 
 function App() {
   return (
@@ -73,6 +74,12 @@ function App() {
             exact
             path="/StoreConfigureSlots"
             component={StoreConfigureSlots}
+          ></Route>
+
+          <Route
+            exact
+            path="/CustomerStoreDetail/:id"
+            component={CustomerStoreDetail}
           ></Route>
 
         </Switch>

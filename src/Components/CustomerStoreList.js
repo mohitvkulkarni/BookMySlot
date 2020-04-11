@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
 import CustomerStore from "./CustomerStore";
+import { Link } from "react-router-dom";
 
 class CustomerStoreList extends React.Component {
   constructor(props) {
@@ -12,11 +13,13 @@ class CustomerStoreList extends React.Component {
           name: "Rahul General Store",
           address: "Gali no. 16, Boriyabandar",
           type: "Grocery Store",
+          id: 1,
         },
         {
           name: "Mohit Medical Store",
           address: "Gali no. 18, Boriyabandar",
           type: "Medical Store",
+          id: 2,
         },
       ],
     };
@@ -27,19 +30,23 @@ class CustomerStoreList extends React.Component {
       <div>
         <div>
           <div className="row">
-              <div>
-            <h3 style={{ color: "#1f1e2f" }}>
-              <b>Available Stores</b>
-            </h3>
+            <div>
+              <h3 style={{ color: "#1f1e2f" }}>
+                <b>Available Stores</b>
+              </h3>
             </div>
           </div>
           <div className="customerStoreListDiv">
             {this.state.stores.map((store) => (
-              <CustomerStore
-                name={store.name}
-                address={store.address}
-                type={store.type}
-              ></CustomerStore>
+
+              <Link to={`/CustomerStoreDetail/${store.id}`}>
+                <CustomerStore
+                  key={store.id}
+                  name={store.name}
+                  address={store.address}
+                  type={store.type}
+                ></CustomerStore>
+              </Link>
             ))}
           </div>
         </div>
