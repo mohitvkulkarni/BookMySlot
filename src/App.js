@@ -30,7 +30,6 @@ function App() {
             component={RegisterConsumer}
           ></Route>
           <Route exact path="/RegisterStore" component={RegisterStore}></Route>
-          <Route exact path="/Consumer" component={ConsumerDashboard}></Route>
           <Route exact path="/Deposit" component={Deposits}></Route>
           <Route exact path="/Withdraw" component={WithdrawFunds}></Route>
           <Route exact path="/Dashboard" component={Dashboard}></Route>
