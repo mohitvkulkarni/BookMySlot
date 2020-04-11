@@ -35,7 +35,7 @@ class RegisterStore extends Component {
             </div>
             <div className="col-12">
               <label className="labelLogin" htmlFor="address">
-                Address
+                Store Address
               </label>
               <input
                 id="address"
@@ -46,7 +46,7 @@ class RegisterStore extends Component {
             </div>
             <div className="col-12">
               <label className="labelLogin" htmlFor="govtId">
-                Id No.
+                Store GST No.
               </label>
               <input
                 id="govtId"
