@@ -12,6 +12,9 @@ import WithdrawSuccessfull from "./Screens/WithdrawSuccessfull";
 import DepositSuccessfull from "./Screens/DepositSuccessfull";
 import RegisterConsumer from "./Components/RegisterConsumer";
 import RegisterStore from "./Components/RegisterStore";
+import AdminDashboard from "./Screens/AdminDashboard";
+import CustomerDashboard from "./Screens/CustomerDashboard";
+import StoreDashboard from "./Screens/StoreDashboard";
 
 function App() {
   return (
@@ -46,6 +49,25 @@ function App() {
             path="/ViewTransactions"
             component={AllTransactions}
           ></Route>
+
+          <Route
+            exact
+            path="/AdminDashboard"
+            component={AdminDashboard}
+          ></Route>
+
+          <Route
+            exact
+            path="/StoreDashboard"
+            component={StoreDashboard}
+          ></Route>
+
+          <Route
+            exact
+            path="/CustomerDashboard"
+            component={CustomerDashboard}
+          ></Route>
+
         </Switch>
       </div>
     </Router>
