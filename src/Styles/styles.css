@@ -371,6 +371,11 @@ body {
   height: 40vh;
 }
 
+.customerStoreListDiv {
+  overflow-y: auto;
+  height: 40vh;
+}
+
 .statsCardValue {
   text-align: center;
   color: #fff;
