@@ -243,6 +243,29 @@ a:hover {
   margin: 10px 0px;
 }
 
+.marginHorizontal {
+  margin: 0px 15px;
+}
+
+.horizontalSlotList {
+  display: flex;
+}
+
+div.horizontalSlotRow::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+div.horizontalSlotRow::-webkit-scrollbar-thumb {
+  background: #1f1e2f;
+}
+div.horizontalSlotRow::-webkit-scrollbar-track {
+  background: #dadada;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #1f1e2f;
+}
+
 .labelLogin {
   font-size: medium;
   margin: 10px 20px;
