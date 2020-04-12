@@ -7,8 +7,6 @@ import shop from "../assets/images/shop.png";
 import doctor from "../assets/images/doctor.png";
 
 class CustomerStoreList extends React.Component {
-
-
   render() {
     return (
       <div>
@@ -26,7 +24,7 @@ class CustomerStoreList extends React.Component {
                   name={store.name}
                   address={store.address}
                   type={store.type}
-                  img={store.type=="Medical Store"?doctor:shop}
+                  img={store.type === "Medical Store" ? doctor : shop}
                 ></CustomerStore>
               </Link>
             ))}

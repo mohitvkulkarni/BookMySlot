@@ -1,10 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
-import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
-import { Link, Redirect } from "react-router-dom";
 import CustomerTimeSlot from "../Components/CustomerTimeSlot";
 import supermarket from "../assets/images/supermarket.png";
 import doctor from "../assets/images/doctor.png";
@@ -42,7 +40,7 @@ class CustomerStoreDetail extends React.Component {
                 <img
                   alt=""
                   src={
-                    this.state.store.type == "Medical store"
+                    this.state.store.type === "Medical store"
                       ? doctor
                       : supermarket
                   }

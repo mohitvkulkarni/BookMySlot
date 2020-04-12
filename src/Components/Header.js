@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import booking from "../assets/images/booking.png";
 import hamIcon from "../assets/images/hamIcon.png";
-// import customer from "../assets/images/customer.png";
-// import shop from "../assets/images/shop.png";
-// import supermarket from "../assets/images/booking.png";
-// import doctor from "../assets/images/doctor.png";
 import Sidebar from "react-sidebar";
 import SidebarContent from "./SidebarContent";
 

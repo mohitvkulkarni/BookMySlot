@@ -4,7 +4,6 @@ import "../Styles/styles.css";
 import Layout from "../Components/Layout";
 import SuccessfullContainer from "../Components/SuccessfullContainer";
 import tickDeposit from "../assets/images/tickDeposit.png";
-import BackButton from "../Components/BackButton";
 import Header from "../Components/Header";
 
 class BookingSuccessful extends React.Component {
