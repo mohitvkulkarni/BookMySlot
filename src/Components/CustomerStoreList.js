@@ -7,27 +7,7 @@ import shop from "../assets/images/shop.png";
 import doctor from "../assets/images/doctor.png";
 
 class CustomerStoreList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      stores: [
-        {
-          name: "Rahul General Store",
-          address: "Gali no. 16, Boriyabandar",
-          type: "Grocery Store",
-          id: 1,
-          img: shop,
-        },
-        {
-          name: "Mohit Medical Store",
-          address: "Gali no. 18, Boriyabandar",
-          type: "Medical Store",
-          id: 2,
-          img: doctor,
-        },
-      ],
-    };
-  }
+
 
   render() {
     return (
@@ -39,14 +19,14 @@ class CustomerStoreList extends React.Component {
             </div>
           </div>
           <div className="customerStoreListDiv">
-            {this.state.stores.map((store) => (
+            {this.props.stores.map((store) => (
               <Link to={`/CustomerStoreDetail/${store.id}`}>
                 <CustomerStore
                   key={store.id}
                   name={store.name}
                   address={store.address}
                   type={store.type}
-                  img={store.img}
+                  img={store.type=="Medical Store"?doctor:shop}
                 ></CustomerStore>
               </Link>
             ))}
