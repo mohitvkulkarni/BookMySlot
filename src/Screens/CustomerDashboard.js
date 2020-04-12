@@ -1,11 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
-import Button from "../Components/Button";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import CustomerSearchBar from "../Components/CustomerSearchBar";
+=======
+import Searchbar from "../Components/Searchbar";
+>>>>>>> da73c1f8f98164b51688f9490d261f26106cb35f
 import "../Styles/stylesSearchBar.css";
 import CustomerStoreList from "../Components/CustomerStoreList";
 
@@ -18,13 +21,12 @@ class CustomerDashboard extends React.Component {
 
   componentDidMount() {
 
-    fetch("http://localhost:3002/stores" )
+    fetch("http://b9da7878.ngrok.io/stores" )
     .then(res => res.json())
     .then(res => {
       this.setState({ stores: res });
         console.log(this.state.stores);
-    });
-
+      });
   }
 
   componentWillUnmount() {}

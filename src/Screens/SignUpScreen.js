@@ -3,12 +3,6 @@ import Layout from "../Components/Layout";
 import Button from "../Components/Button";
 import Header from "../Components/Header";
 import IsLoading from "../Components/IsLoading";
-import web3Obj from "../utils";
-import UserService from "../Services/UserService";
-import CONSTANTS from "../constants";
-import EthScanService from "../Services/EthScanService";
-import SignUpBasic from "../Components/SignUpBasic";
-import LoginComponent from "../Components/LoginComponent";
 
 class Login extends Component {
   constructor(props) {

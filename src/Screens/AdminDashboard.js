@@ -7,6 +7,9 @@ import StatsCard from "../Components/StatsCard";
 import Searchbar from "../Components/Searchbar";
 import consumer from "../assets/images/consumer.png";
 import store from "../assets/images/store.png";
+import Button from "../Components/Button";
+import { Link } from "react-router-dom";
+
 
 class AdminDashboard extends React.Component {
   state = {
@@ -46,7 +49,7 @@ class AdminDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Admin Dashboard" headerImage = "shop"/>
+          <Header name="Admin Dashboard" headerImage = "admin"/>
           <div className="row horizontalSlotRow" style={{ overflow: "auto" }}>
             <div className="horizontalSlotList">
               <div className="col-6">
@@ -112,6 +115,13 @@ class AdminDashboard extends React.Component {
               </button>
             </div>
           </div>
+          <Link to={"/TrackingBoard"}>
+            <Button
+              label={`Tracking Dashboard`}
+              color={"#333d79ff"}
+              className="loginButton"
+            />
+          </Link>
         </Layout>
       </div>
     );

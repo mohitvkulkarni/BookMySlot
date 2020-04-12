@@ -17,11 +17,11 @@ class SidebarContent extends Component {
           <h3 style={{ padding: "20px", color: "white" }}>Menu</h3>
         </div>
         <br />
-        <a style={{ padding: "15px", marginTop: "30px" }}>User Profile</a>
+        <span style={{ padding: "15px", marginTop: "30px" }}>User Profile</span>
         <br />
         <hr />
         <Link to={"/"}>
-          <a style={{ padding: "50px" }}>Logout</a>
+          <span style={{ padding: "50px" }}>Logout</span>
         </Link>
         <hr />
       </div>

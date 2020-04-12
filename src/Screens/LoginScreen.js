@@ -3,7 +3,6 @@ import Layout from "../Components/Layout";
 import Button from "../Components/Button";
 import Header from "../Components/Header";
 import IsLoading from "../Components/IsLoading";
-import enter from "../assets/images/enter.png";
 
 class LoginScreen extends Component {
   constructor(props) {
@@ -32,7 +31,6 @@ class LoginScreen extends Component {
   handleInputChange(event) {
     const target = event.target;
     const value = target.value;
-    const name = target.name;
 
     this.setState({
       mailId: value,
@@ -42,7 +40,6 @@ class LoginScreen extends Component {
   handlePasswordChange(event) {
     const target = event.target;
     const value = target.value;
-    const name = target.name;
 
     this.setState({
       password: value,
@@ -50,9 +47,9 @@ class LoginScreen extends Component {
   }
 
   handleLogin = () => {
-    if (this.state.mailId == "admin@xyz.com") {
+    if (this.state.mailId === "admin@xyz.com") {
       this.props.history.push("/AdminDashboard");
-    } else if (this.state.mailId == "customer@xyz.com") {
+    } else if (this.state.mailId === "customer@xyz.com") {
       this.props.history.push("/CustomerDashboard");
     } else {
       this.props.history.push("/StoreDashboard");

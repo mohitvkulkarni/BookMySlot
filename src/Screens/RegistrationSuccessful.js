@@ -4,7 +4,6 @@ import "../Styles/styles.css";
 import Layout from "../Components/Layout";
 import SuccessfulRegistrationContainer from "../Components/SuccessfulRegistrationContainer";
 import tickDeposit from "../assets/images/tickDeposit.png";
-import BackButton from "../Components/BackButton";
 import Header from "../Components/Header";
 
 class RegistrationSuccessful extends React.Component {

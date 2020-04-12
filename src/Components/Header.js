@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import booking from "../assets/images/booking.png";
 import hamIcon from "../assets/images/hamIcon.png";
-// import customer from "../assets/images/customer.png";
-// import shop from "../assets/images/shop.png";
-// import supermarket from "../assets/images/booking.png";
-// import doctor from "../assets/images/doctor.png";
 import Sidebar from "react-sidebar";
 import SidebarContent from "./SidebarContent";
 
@@ -14,7 +10,8 @@ class Header extends Component {
     this.state = {
       sidebarOpen: false,
       rootClass: {
-        top: 15,
+        top: 20,
+        height: 35,
       },
     };
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
@@ -82,7 +79,9 @@ class Header extends Component {
               <div className="zefi col-12">
                 <img
                   alt=""
-                  src={require("../assets/images/" + this.props.headerImage +".png")}
+                  src={require("../assets/images/" +
+                    this.props.headerImage +
+                    ".png")}
                   className="headerLogo"
                 />
                 {this.props.name}
