@@ -144,7 +144,7 @@ div {
 
 .header {
   background: #ffffff;
-  border: 1px solid #e9e8ec;
+  border-bottom: 2px solid #e9e8ec;
   align-items: center;
   height: 12vh;
 }
@@ -490,6 +490,10 @@ a {
 }
 
 input:focus {
+  outline: none;
+}
+
+button:focus {
   outline: none;
 }
 

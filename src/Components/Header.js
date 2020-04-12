@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import booking from "../assets/images/booking.png";
+import hamIcon from "../assets/images/hamIcon.png";
 import customer from "../assets/images/customer.png";
 import shop from "../assets/images/shop.png";
 import supermarket from "../assets/images/booking.png";
@@ -10,49 +11,78 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarOpen: true,
+      sidebarOpen: false,
+      rootClass: {
+        top: 15,
+      },
     };
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
 
   onSetSidebarOpen(open) {
+    console.log(open);
     this.setState({ sidebarOpen: open });
+    if (open) {
+      this.setState({
+        rootClass: {
+          height: "90vh",
+          width: 300,
+        },
+      });
+    } else {
+      this.setState({
+        rootClass: {
+          top: 15,
+        },
+      });
+    }
   }
 
   render() {
     return (
-      <div>
-        <Sidebar
-          sidebar={<b>Sidebar content</b>}
-          open={this.state.sidebarOpen}
-          onSetOpen={this.onSetSidebarOpen}
-          styles={{ sidebar: { background: "white" } }}
-        >
-          <button onClick={() => this.onSetSidebarOpen(true)}>
-            Open sidebar
-          </button>
-        </Sidebar>
-        <div className="row" style={{ padding: 0 }}>
-          <div
-            className="col-12 header"
-            style={{ textAlign: "center", display: "flex" }}
+      <div className="row" style={{ padding: 0 }}>
+        <div className="col-2 header" style={{ margin: 0 }}>
+          <Sidebar
+            sidebar={
+              <div>
+                <a>Sidebar content</a>
+                <br />
+                <a>Main content</a>
+              </div>
+            }
+            open={this.state.sidebarOpen}
+            onSetOpen={this.onSetSidebarOpen}
+            styles={{
+              sidebar: { background: "white" },
+              root: this.state.rootClass,
+            }}
           >
-            {!this.props.name ? (
-              <div className="zefi col-12">
-                <img alt="" src={booking} className="headerLogo" />
-                BOOKMYSLOT
-              </div>
-            ) : (
-              <div className="zefi col-12">
-                <img
-                  alt=""
-                  src={this.props.headerImage}
-                  className="headerLogo"
-                />
-                {this.props.name}
-              </div>
-            )}
-          </div>
+            <button
+              onClick={() => this.onSetSidebarOpen(true)}
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+              }}
+            >
+              <img alt="" src={hamIcon} style={{ height: 30 }} />
+            </button>
+          </Sidebar>
+        </div>
+        <div
+          className="col-10 header"
+          style={{ textAlign: "center", display: "flex", margin: 0 }}
+        >
+          {!this.props.name ? (
+            <div className="zefi col-12">
+              <img alt="" src={booking} className="headerLogo" />
+              BOOKMYSLOT
+            </div>
+          ) : (
+            <div className="zefi col-12">
+              <img alt="" src={this.props.headerImage} className="headerLogo" />
+              {this.props.name}
+            </div>
+          )}
         </div>
       </div>
     );
