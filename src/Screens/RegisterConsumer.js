@@ -66,7 +66,7 @@ class RegisterConsumer extends Component {
               />
             </div>
             <Button
-              label={`Submit`}
+              label={`Sign Up`}
               color={"#333d79ff"}
               onClick={this.handleSubmit}
               className="loginButton"

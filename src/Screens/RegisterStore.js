@@ -79,7 +79,7 @@ class RegisterStore extends Component {
               </select>
             </div>
             <Button
-              label={`Submit`}
+              label={`Sign Up`}
               color={"#333d79ff"}
               onClick={this.handleSubmit}
               className="loginButton"

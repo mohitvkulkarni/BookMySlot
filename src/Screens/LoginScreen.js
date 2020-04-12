@@ -20,6 +20,7 @@ class LoginScreen extends Component {
       isLoading: false,
       mailId: "",
       password: "",
+      isInvalid: false,
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -47,12 +48,15 @@ class LoginScreen extends Component {
   }
 
   handleLogin = () => {
-    if (this.state.mailId === "admin@xyz.com") {
+    if (this.state.mailId === "admin@xyz.com" && this.state.password === "admin@123") {
       this.props.history.push("/AdminDashboard");
-    } else if (this.state.mailId === "customer@xyz.com") {
+    } else if (this.state.mailId === "customer@xyz.com" && this.state.password === "customer@123") {
       this.props.history.push("/CustomerDashboard");
-    } else {
+    } else if (this.state.mailId === "store@xyz.com" && this.state.password === "store@123"){
       this.props.history.push("/StoreDashboard");
+    }
+    else{
+      this.setState({isInValid:true});
     }
   };
 
@@ -102,7 +106,13 @@ class LoginScreen extends Component {
                 />
               </div>
             </div>
-
+            {this.state.isInValid? 
+              <div>
+              <span style = {{color:"red"}}>
+                Please enter valid credentials.
+              </span>
+            </div>:
+            null}
             <div style={{ marginTop: "5rem" }}>
               {this.state.isLoading && <IsLoading />}
               <Button

@@ -112,7 +112,7 @@ class Login extends Component {
             <div>
               {this.state.isLoading && <IsLoading />}
               <Button
-                label={`Sign Up`}
+                label={`Continue`}
                 onClick={this.handleSignUp}
                 color={"#333d79ff"}
                 className="loginButton"
