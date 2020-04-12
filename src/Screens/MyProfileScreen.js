@@ -27,7 +27,7 @@ class MyProfileScreen extends Component {
                   id="mailId"
                   type="text"
                   name="mailId"
-                  value="Mohit"
+                  value="Ganesh"
                   className="textInput"
                 />
             </div>
@@ -39,7 +39,7 @@ class MyProfileScreen extends Component {
                   id="mailId"
                   type="text"
                   name="mailId"
-                  value="Kulkarni"
+                  value="Gaitonde"
                   className="textInput"
                 />
             </div>
