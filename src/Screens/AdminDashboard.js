@@ -46,7 +46,7 @@ class AdminDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Admin Dashboard" />
+          <Header name="Admin Dashboard" headerImage = "shop"/>
           <div className="row horizontalSlotRow" style={{ overflow: "auto" }}>
             <div className="horizontalSlotList">
               <div className="col-6">
@@ -61,7 +61,7 @@ class AdminDashboard extends React.Component {
               <div className="col-6">
                 <StatsCard
                   header={"Last Visitor Slot Today"}
-                  value={"8.30 - 9.00"}
+                  value={"8.30 AM - 9.00 AM"}
                 />
               </div>
             </div>

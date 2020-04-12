@@ -18,7 +18,7 @@ class StoreConfigureSlots extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Store Dashboard" />
+          <Header name="Store Dashboard" headerImage= "shop" />
           <div style={{ paddingTop: 20 }}>
             <h3 style={{ color: "#333d79ff" }}>
               <b>Configure Slots</b>
