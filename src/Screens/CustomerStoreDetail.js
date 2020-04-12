@@ -14,41 +14,45 @@ class CustomerStoreDetail extends React.Component {
     super(props);
     this.state = {
       store: {
-        slotList:[]
+        slotList: [],
       },
-      
     };
   }
 
- 
-
   componentDidMount() {
-
     fetch("http://b9da7878.ngrok.io/stores/" + this.props.match.params.id)
-    .then(res => res.json())
-    .then(res => {
-      this.setState({ store: res });
+      .then((res) => res.json())
+      .then((res) => {
+        this.setState({ store: res });
         console.log(this.state.store.slotList);
-    });
-
+      });
   }
 
   // handleBookButtonClick = () => <Redirect push to="/BookingSuccessful" />
 
   componentWillUnmount() {}
   render() {
-  
     return (
       <div>
         <Layout>
-          <Header name="Customer Dashboard" headerImage = "customer"/>
+          <Header name="Customer Dashboard" headerImage="customer" />
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="cardTile col-11 row">
               <div className="col-4 centerDiv">
-                <img alt="" src={this.state.store.type == "Medical store"?doctor:supermarket} style={{ height: 100 }} />
+                <img
+                  alt=""
+                  src={
+                    this.state.store.type == "Medical store"
+                      ? doctor
+                      : supermarket
+                  }
+                  style={{ height: 100 }}
+                />
               </div>
               <div className="col-7" style={{ textAlign: "left" }}>
-                <div>{this.state.store.name}</div>
+                <div>
+                  <b>{this.state.store.name}</b>
+                </div>
                 <div>{this.state.store.address}</div>
                 <div>{this.state.store.contact}</div>
                 <div>{this.state.store.type}</div>
@@ -59,7 +63,7 @@ class CustomerStoreDetail extends React.Component {
             <h3 style={{ color: "#333d79ff" }}>AVAILABLE SLOTS</h3>
             <div className="slotListDiv">
               <div className="customerStoreListDiv">
-              {this.state.store.slotList.map((slot) => (
+                {this.state.store.slotList.map((slot) => (
                   <CustomerTimeSlot
                     key={slot.id}
                     slotAvailability={slot.slotAvailability}
