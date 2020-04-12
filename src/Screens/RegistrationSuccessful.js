@@ -11,7 +11,7 @@ class RegistrationSuccessful extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Successful!" />
+          <Header name="Successful!" headerImage = "tickDeposit" />
           <br />
           <br />
           <div style={{ padding: 10 }}>

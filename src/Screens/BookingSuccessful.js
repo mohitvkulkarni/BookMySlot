@@ -11,7 +11,7 @@ class BookingSuccessful extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Booking Successful!" />
+          <Header name="Booking Successful!" headerImage = "tickDeposit" />
           <br />
           <br />
           <div>Your Unique ID for this booking is ADAJH6.</div>
