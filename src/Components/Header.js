@@ -6,6 +6,7 @@ import shop from "../assets/images/shop.png";
 import supermarket from "../assets/images/booking.png";
 import doctor from "../assets/images/doctor.png";
 import Sidebar from "react-sidebar";
+import SidebarContent from "./SidebarContent";
 
 class Header extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class Header extends Component {
       this.setState({
         rootClass: {
           height: "90vh",
-          width: 300,
+          width: 400,
         },
       });
     } else {
@@ -42,31 +43,29 @@ class Header extends Component {
     return (
       <div className="row" style={{ padding: 0 }}>
         <div className="col-2 header" style={{ margin: 0 }}>
-          <Sidebar
-            sidebar={
-              <div>
-                <a>Sidebar content</a>
-                <br />
-                <a>Main content</a>
-              </div>
-            }
-            open={this.state.sidebarOpen}
-            onSetOpen={this.onSetSidebarOpen}
-            styles={{
-              sidebar: { background: "white" },
-              root: this.state.rootClass,
-            }}
-          >
-            <button
-              onClick={() => this.onSetSidebarOpen(true)}
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
+          {!this.props.name ? (
+            <br />
+          ) : (
+            <Sidebar
+              sidebar={<SidebarContent />}
+              open={this.state.sidebarOpen}
+              onSetOpen={this.onSetSidebarOpen}
+              styles={{
+                sidebar: { background: "white" },
+                root: this.state.rootClass,
               }}
             >
-              <img alt="" src={hamIcon} style={{ height: 30 }} />
-            </button>
-          </Sidebar>
+              <button
+                onClick={() => this.onSetSidebarOpen(true)}
+                style={{
+                  backgroundColor: "transparent",
+                  border: "none",
+                }}
+              >
+                <img alt="" src={hamIcon} style={{ height: 30 }} />
+              </button>
+            </Sidebar>
+          )}
         </div>
         <div
           className="col-10 header"
