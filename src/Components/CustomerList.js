@@ -13,7 +13,6 @@ class CustomerList extends React.Component {
         <div>
           <div className="customerStoreListDiv">
             {this.props.customers.map((customer) => (
-              <Link to={`/CustomerStoreDetail/${customer.id}`}>
                 <CustomerCard
                   key={customer.id}
                   name={customer.name}
@@ -21,7 +20,6 @@ class CustomerList extends React.Component {
                   contact={customer.contact}
                   img={shop}
                 ></CustomerCard>
-              </Link>
             ))}
           </div>
         </div>

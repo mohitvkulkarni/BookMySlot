@@ -53,14 +53,14 @@ class AdminDashboard extends React.Component {
   };
 
   componentDidMount() {
-    fetch("http://b9da7878.ngrok.io/stores")
+    fetch(" http://b9da7878.ngrok.io/stores")
       .then(res => res.json())
       .then(res => {
         this.setState({ stores: res, filteredList: res });
         //console.log(this.state.stores);
       });
 
-    fetch("http://b9da7878.ngrok.io/customers")
+    fetch(" http://b9da7878.ngrok.io/customers")
       .then(res => res.json())
       .then(res => {
         this.setState({ customers: res });
@@ -155,7 +155,8 @@ class AdminDashboard extends React.Component {
           <div>
             <div className="row">
               <div>
-                <h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>
+              {this.state.isStore?<h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>:<h3 style={{ color: "#333d79ff" }}>ACTIVE CONSUMERS</h3>}
+              
               </div>
             </div>
             <div className="slotListDiv">
