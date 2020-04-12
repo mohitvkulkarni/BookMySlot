@@ -1,14 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Dashboard from "./Screens/Dashboard";
-import Deposits from "./Screens/Deposits";
-import WithdrawFunds from "./Screens/WithdrawFunds";
-import DeopsitsViaScreen from "./Screens/DepositViaScreen";
-import WithdrawToScreen from "./Screens/WithdrawToScreen";
-import AllTransactions from "./Screens/AllTransactions";
-import WithdrawSuccessfull from "./Screens/WithdrawSuccessfull";
-import DepositSuccessfull from "./Screens/DepositSuccessfull";
 import RegisterConsumer from "./Screens/RegisterConsumer";
 import RegisterStore from "./Screens/RegisterStore";
 import AdminDashboard from "./Screens/AdminDashboard";
@@ -37,27 +29,6 @@ function App() {
             component={RegisterConsumer}
           ></Route>
           <Route exact path="/RegisterStore" component={RegisterStore}></Route>
-          <Route exact path="/Deposit" component={Deposits}></Route>
-          <Route exact path="/Withdraw" component={WithdrawFunds}></Route>
-          <Route exact path="/Dashboard" component={Dashboard}></Route>
-          <Route exact path="/DepositVia" component={DeopsitsViaScreen}></Route>
-          <Route
-            exact
-            path="/WithdrawSuccessfull"
-            component={WithdrawSuccessfull}
-          ></Route>
-          <Route
-            exact
-            path="/DepositSuccessfull"
-            component={DepositSuccessfull}
-          ></Route>
-          <Route exact path="/WithdrawTo" component={WithdrawToScreen}></Route>
-          <Route
-            exact
-            path="/ViewTransactions"
-            component={AllTransactions}
-          ></Route>
-
           <Route
             exact
             path="/AdminDashboard"
@@ -103,16 +74,12 @@ function App() {
             path="/RegistrationSuccessful"
             component={RegistrationSuccessful}
           ></Route>
-           <Route
+          <Route
             exact
             path="/MyProfileScreen"
             component={MyProfileScreen}
           ></Route>
-          <Route
-            exact
-            path="/AboutUs"
-            component={AboutUs}
-          ></Route>
+          <Route exact path="/AboutUs" component={AboutUs}></Route>
         </Switch>
       </div>
     </Router>

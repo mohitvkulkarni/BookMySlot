@@ -14,7 +14,7 @@ import CustomerList from "../Components/CustomerList";
 
 class AdminDashboard extends React.Component {
   state = {
-    filteredList:[],
+    filteredList: [],
     keys_to_filter: ["name"],
     stores: [],
     customers: [],
@@ -66,19 +66,14 @@ class AdminDashboard extends React.Component {
         this.setState({ customers: res });
         //console.log(this.state.customers);
       });
-
-
   }
 
   changeFilteredResults = (filteredResults) => {
-
     console.log(filteredResults);
     this.setState({ filteredList: filteredResults });
-    
+  };
 
-  }
-
-  componentWillUnmount() { }
+  componentWillUnmount() {}
   render() {
     return (
       <div>
@@ -107,7 +102,15 @@ class AdminDashboard extends React.Component {
             className="row"
             style={{ padding: 10, justifyContent: "center" }}
           >
-            <AdminSearchBar content={this.state.isStore == true?this.state.stores:this.state.customers} keys_to_filter={this.state.keys_to_filter} changeFilteredResults={this.changeFilteredResults} />
+            <AdminSearchBar
+              content={
+                this.state.isStore === true
+                  ? this.state.stores
+                  : this.state.customers
+              }
+              keys_to_filter={this.state.keys_to_filter}
+              changeFilteredResults={this.changeFilteredResults}
+            />
           </div>
           <div className="row">
             <div className="col-6 noSpace">
@@ -155,15 +158,25 @@ class AdminDashboard extends React.Component {
           <div>
             <div className="row">
               <div>
-              {this.state.isStore?<h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>:<h3 style={{ color: "#333d79ff" }}>ACTIVE CONSUMERS</h3>}
-              
+                {this.state.isStore ? (
+                  <h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>
+                ) : (
+                  <h3 style={{ color: "#333d79ff" }}>ACTIVE CONSUMERS</h3>
+                )}
               </div>
             </div>
             <div className="slotListDiv">
-              {this.state.isStore?<CustomerStoreList stores={this.state.filteredList}></CustomerStoreList>:<CustomerList customers={this.state.filteredList}></CustomerList>}
+              {this.state.isStore ? (
+                <CustomerStoreList
+                  stores={this.state.filteredList}
+                ></CustomerStoreList>
+              ) : (
+                <CustomerList
+                  customers={this.state.filteredList}
+                ></CustomerList>
+              )}
             </div>
           </div>
-
 
           <Link to={"/TrackingBoard"}>
             <Button
