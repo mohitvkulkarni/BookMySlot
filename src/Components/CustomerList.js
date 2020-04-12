@@ -4,7 +4,7 @@ import "../Styles/styles.css";
 import CustomerCard from "./CustomerCard";
 import { Link } from "react-router-dom";
 import shop from "../assets/images/shop.png";
-import doctor from "../assets/images/doctor.png";
+import user from "../assets/images/user.png";
 
 class CustomerList extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class CustomerList extends React.Component {
                   name={customer.name}
                   address={customer.address}
                   contact={customer.contact}
-                  img={shop}
+                  img={user}
                 ></CustomerCard>
             ))}
           </div>
