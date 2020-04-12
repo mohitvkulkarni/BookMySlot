@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import SearchInput, { createFilter } from "react-search-input";
+import SearchInput from "react-search-input";
 
 // import emails from "./mails";
 
 //const KEYS_TO_FILTERS = ["user.name", "subject", "dest.name"];
 
 const Searchbar = () => {
+  // eslint-disable-next-line
   const [searchTerm, setSearchTerm] = useState("");
 
   const searchUpdated = (term) => {
@@ -17,7 +18,6 @@ const Searchbar = () => {
   // );
 
   return (
-    
     <div style={{ margin: 15 }}>
       <SearchInput className="search-input" onChange={searchUpdated} />
       {/* {filteredEmails.map((email) => {
