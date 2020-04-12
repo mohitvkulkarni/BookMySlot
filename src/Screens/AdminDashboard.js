@@ -98,7 +98,7 @@ class AdminDashboard extends React.Component {
               <div className="col-6">
                 <StatsCard
                   header={"Last Visitor Slot Today"}
-                  value={"8.30 AM - 9.00 AM"}
+                  value={"9.00 PM"}
                 />
               </div>
             </div>

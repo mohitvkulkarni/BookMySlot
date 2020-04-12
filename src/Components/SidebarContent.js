@@ -17,8 +17,23 @@ class SidebarContent extends Component {
           <h3 style={{ padding: "20px", color: "white" }}>Menu</h3>
         </div>
         <br />
+        <Link to={"/AdminDashboard"}>
+        <span style={{ margin: "15px" }}>Home</span>
+        </Link>
+        <br />
+        <hr />
         <Link to={"/MyProfileScreen"}>
-        <span style={{ margin: "15px" }}>User Profile</span>
+        <span style={{ margin: "15px" }}>My Profile</span>
+        </Link>
+        <br />
+        <hr />
+        <Link>
+        <span style={{ margin: "15px" }}>History</span>
+        </Link>
+        <br />
+        <hr />
+        <Link to={"/AboutUs"}>
+        <span style={{ margin: "15px" }}>About us</span>
         </Link>
         <br />
         <hr />

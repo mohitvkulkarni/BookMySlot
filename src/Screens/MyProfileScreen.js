@@ -5,57 +5,7 @@ import Header from "../Components/Header";
 import IsLoading from "../Components/IsLoading";
 
 class MyProfileScreen extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loginList: [
-        { email: "admin@xyz.com", password: "admin123", userType: "admin" },
-        {
-          email: "customer@xyz.com",
-          password: "customer123",
-          userType: "customer",
-        },
-        { email: "store@xyz.com", password: "store123", userType: "store" },
-      ],
-      isLoading: false,
-      mailId: "",
-      password: "",
-    };
-
-    this.handleInputChange = this.handleInputChange.bind(this);
-    this.handlePasswordChange = this.handlePasswordChange.bind(this);
-  }
-
-  componentDidMount() {}
-
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.value;
-
-    this.setState({
-      mailId: value,
-    });
-  }
-
-  handlePasswordChange(event) {
-    const target = event.target;
-    const value = target.value;
-
-    this.setState({
-      password: value,
-    });
-  }
-
-  handleLogin = () => {
-    if (this.state.mailId === "admin@xyz.com") {
-      this.props.history.push("/AdminDashboard");
-    } else if (this.state.mailId === "customer@xyz.com") {
-      this.props.history.push("/CustomerDashboard");
-    } else {
-      this.props.history.push("/StoreDashboard");
-    }
-  };
-
+  
   render() {
     return (
       <div>
