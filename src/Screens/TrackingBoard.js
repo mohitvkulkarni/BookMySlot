@@ -56,7 +56,7 @@ class TrackingBoard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Tracking Board" headerImage = "shop"/>
+          <Header name="Tracking Board" headerImage = "track"/>
           <div
             className="row"
             style={{ padding: 10, justifyContent: "center" }}

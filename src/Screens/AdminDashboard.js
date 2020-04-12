@@ -49,7 +49,7 @@ class AdminDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Admin Dashboard" headerImage = "shop"/>
+          <Header name="Admin Dashboard" headerImage = "admin"/>
           <div className="row horizontalSlotRow" style={{ overflow: "auto" }}>
             <div className="horizontalSlotList">
               <div className="col-6">
