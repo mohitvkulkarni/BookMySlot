@@ -1,619 +1,1141 @@
 {
-  "stores": [
-    {
-      "name": "Pravin General Store",
-      "address": "S. No. 7, Clover Heights, Rastapeth, Pune",
-      "type": "Grocery Store",
-      "id": 1,
-      "contact": "9876543210",
-      "openTime": "9.00 am",
-      "closeTime": "12.00pm",
-      "slotTime": "1 hr",
-      "govtId": "123456789123",
-      "noOfPeoplePerSlot": "15",
-      "slotList": [
-        {
-          "date": "4/11/2020",
-          "slotTime": "9.00 am - 10.00 am",
-          "slotAvailability": 10,
-          "id": 1
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 11.00 am",
-          "slotAvailability": 4,
-          "id": 2
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "slotAvailability": 1,
-          "id": 3
-        }
-      ]
-    },
-    {
-      "name": "Aaushdi Chemist",
-      "address": "Lane no. 2, Koregaon Park, Pune",
-      "type": "Medical Store",
-      "id": 2,
-      "contact": "0123456789",
-      "openTime": "9.00 am",
-      "closeTime": "11.00 pm",
-      "slotTime": "15 min",
-      "govtId": "123456333123",
-      "noOfPeoplePerSlot": "8",
-      "slotList": [
-        {
-          "date": "4/12/2020",
-          "slotTime": "9.00 am - 9.30 am",
-          "slotAvailability": 2,
-          "id": 1
-        },
-        {
-          "date": "4/12/2020",
-          "slotTime": "9.30 am - 10.00 am",
-          "slotAvailability": 7,
-          "id": 2
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 10.30 am",
-          "slotAvailability": 6,
-          "id": 3
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.30 am - 11.00 am",
-          "slotAvailability": 2,
-          "id": 4
-        }
-      ]
-    },
-    {
-      "name": "Om Medical",
-      "address": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-      "type": "Medical Store",
-      "id": 3,
-      "contact": "978712121",
-      "openTime": "10.00 am",
-      "closeTime": "12.00pm",
-      "slotTime": "1 hr",
-      "govtId": "123456787773",
-      "noOfPeoplePerSlot": "5",
-      "slotList": [
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 11.00 am",
-          "slotAvailability": 2,
-          "id": 1
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "slotAvailability": 4,
-          "id": 2
-        }
-      ]
-    },
-    {
-      "name": "Poona General Store",
-      "address": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
-      "type": "Grocery Store",
-      "id": 4,
-      "contact": "989823235",
-      "openTime": "9.00 am",
-      "closeTime": "10.30 am",
-      "slotTime": "30 min",
-      "govtId": "883456789123",
-      "noOfPeoplePerSlot": "10",
-      "slotList": [
-        {
-          "date": "4/11/2020",
-          "slotTime": "9.00 am - 9.30 am",
-          "slotAvailability": 6,
-          "id": 1
-        },
-        {
-          "date": "4/10/2020",
-          "slotTime": "9.30 am - 10.00 am",
-          "slotAvailability": 1,
-          "id": 2
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 10.30 am",
-          "slotAvailability": 8,
-          "id": 3
-        }
-      ]
-    },
-    {
-      "name": "Deepak G Store",
-      "address": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-      "type": "Grocery Store",
-      "id": 5,
-      "contact": "989823277",
-      "openTime": "2.00 pm",
-      "closeTime": "2.00 pm",
-      "slotTime": "1 hr",
-      "govtId": "553456789123",
-      "noOfPeoplePerSlot": "10",
-      "slotList": [
-        {
-          "date": "4/11/2020",
-          "slotTime": "2.00 pm - 3.00 pm",
-          "slotAvailability": 6,
-          "id": 1
-        },
-        {
-          "date": "4/10/2020",
-          "slotTime": "3.00 pm - 4.00 pm",
-          "slotAvailability": 4,
-          "id": 2
-        }
-      ]
-    },
-    {
-      "name": "Shri Grocery Mart",
-      "address": "Lane no. 5, Koregaon Park, Pune",
-      "type": "Grocery Store",
-      "id": 6,
-      "contact": "8893456789",
-      "openTime": "10.00 am",
-      "closeTime": "12.00 pm",
-      "slotTime": "30 min",
-      "govtId": "127756789123",
-      "noOfPeoplePerSlot": "10",
-      "slotList": [
-        {
-          "date": "4/12/2020",
-          "slotTime": "10.00 am - 10.30 am",
-          "slotAvailability": 2,
-          "id": 1
-        },
-        {
-          "date": "4/12/2020",
-          "slotTime": "10.30 am - 11.00 am",
-          "slotAvailability": 3,
-          "id": 2
-        },
-        {
-          "date": "4/10/2020",
-          "slotTime": "11.00 am - 11.30 am",
-          "slotAvailability": 2,
-          "id": 3
-        },
-        {
-          "date": "4/13/2020",
-          "slotTime": "11.30 am - 12.00 am",
-          "slotAvailability": 5,
-          "id": 4
-        }
-      ]
-    },
-    {
-      "name": "Laxmi Mart",
-      "address": "Street No 12, JM Road, Pune",
-      "type": "Grocery Store",
-      "id": 7,
-      "contact": "9998456789",
-      "openTime": "9.00 am",
-      "closeTime": "12.00 pm",
-      "slotTime": "1 hr",
-      "govtId": "997456789123",
-      "noOfPeoplePerSlot": "10",
-      "slotList": [
-        {
-          "date": "4/12/2020",
-          "slotTime": "9.00 am - 10.00 am",
-          "slotAvailability": 3,
-          "id": 1
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 11.00 am",
-          "slotAvailability": 7,
-          "id": 2
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "slotAvailability": 2,
-          "id": 3
-        },
-        {
-          "date": "4/13/2020",
-          "slotTime": "4.00 am - 5.00 am",
-          "slotAvailability": 4,
-          "id": 4
-        }
-      ]
-    },
-    {
-      "name": "Pratigya General stores",
-      "address": "S. No. 8, Disha Heights, Hadapsar, Pune",
-      "type": "Grocery Store",
-      "contact": "9876543215",
-      "openTime": "10.00 am",
-      "closeTime": "12.00 pm",
-      "slotTime": "30 min",
-      "govtId": "123456789993",
-      "noOfPeoplePerSlot": "9",
-      "slotList": [],
-      "id": 8
-    }
-  ],
-  "customers": [
-    {
-      "name": "Rahul Mehra",
-      "address": "Flat no.6, Yellow Blossom, BT Kawade Road, Pune",
-      "mailId": "customer@xyz.com",
-      "id": 1,
-      "govtId": "111122223333",
-      "contact": "9876543210",
-      "activities": [
-        {
-          "name": "Deepak G Store",
-          "slotTime": "2.00 am - 3.00 am",
-          "slotAvailability":4,
-          "date": "4/11/2020",
-          "uniqueId": "123456",
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        },
-        {
-          "name": "Om Medical",
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 11.00 am",
-          "uniqueId": "623456",
-          "slotAvailability":3,
-          "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-          "id": 3
-        },
-        {
-          "name": "Pravin General Store",
-          "slotTime": "11.00 am - 12.00 am",
-          "date": "4/11/2020",
-          "uniqueId": "523456",
-          "slotAvailability":2,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 1
-        },
-        {
-          "name": "Laxmi Mart",
-          "date": "4/13/2020",
-          "slotTime": "4.00 am - 5.00 am",
-          "uniqueId": "923456",
-          "slotAvailability":7,
-          "storeAddress": "Street No 12, JM Road, Pune",
-          "id": 7
-        }
-      ]
-    },
-    {
-      "name": "Mohit Kulkarni",
-      "address": "Flat no.C 201, Laxmi Residence, Bibwewadi, Pune",
-      "mailId": "customer2@xyz.com",
-      "id": 2,
-      "govtId": "111144443333",
-      "contact": "9876543212",
-      "activities": [
-        {
-          "name": "Deepak G Store",
-          "slotTime": "2.00 am - 3.00 am",
-          "date": "4/11/2020",
-          "uniqueId": "573456",
-          "slotAvailability":2,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        },
-        {
-          "name": "Om Medical",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "593456",
-          "slotAvailability":7,
-          "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-          "id": 3
-        },
-        {
-          "name": "Poona General Store",
-          "date": "4/10/2020",
-          "slotTime": "9.30 am - 10.00 am",
-          "uniqueId": "873456",
-          "slotAvailability":7,
-          "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
-          "id": 4
-        }
-      ]
-    },
-    {
-      "name": "Shivam Kakad",
-      "address": "Flat no.412, MG Road, Pune",
-      "mailId": "customer3@xyz.com",
-      "id": 3,
-      "contact": "9976543210",
-      "govtId": "111155553333",
-      "activities": [
-        {
-          "name": "Aaushdi Chemist",
-          "date": "4/12/2020",
-          "slotTime": "9.00 am - 9.30 am",
-          "uniqueId": "579456",
-          "slotAvailability":3,
-          "storeAddress": "Lane no. 2, Koregaon Park, Pune",
-          "id": 2
-        },
-        {
-          "name": "Om Medical",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "573886",
-          "slotAvailability":6,
-          "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-          "id": 3
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/10/2020",
-          "slotTime": "3.00 pm - 4.00 pm",
-          "uniqueId": "993456",
-          "slotAvailability":6,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        }
-      ]
-    },
-    {
-      "name": "Bhavya Mehta",
-      "address": "Flat no. 202, Ganga Society, Koregaon Park, Pune",
-      "mailId": "customer4@xyz.com",
-      "id": 4,
-      "contact": "9976543444",
-      "govtId": "999922223333",
-      "activities": [
-        {
-          "name": "Aaushdi Chemist",
-          "date": "4/12/2020",
-          "uniqueId": "993456",
-          "slotTime": "9.00 am - 9.30 am",
-          "slotAvailability":9,
-          "storeAddress": "Lane no. 2, Koregaon Park, Pune",
-          "id": 2
-        },
-        {
-          "name": "Pravin General Store",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "573886",
-          "slotAvailability":10,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 1
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/11/2020",
-          "slotTime": "2.00 pm - 3.00 pm",
-          "uniqueId": "999456",
-          "slotAvailability":2,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        }
-      ]
-    },
-    {
-      "name": "Umakant Gupta",
-      "address": "Flat no. 97, Orchard Lily, MG Road, Pune",
-      "mailId": "customer5@xyz.com",
-      "id": 4,
-      "contact": "9976541444",
-      "govtId": "111188883333",
-      "activities": [
-        {
-          "name": "Poona General Store",
-          "date": "4/10/2020",
-          "slotTime": "9.30 am - 10.00 am",
-          "uniqueId": "543456",
-          "slotAvailability":2,
-          "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
-          "id": 2
-        },
-        {
-          "name": "Pravin General Store",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "573898",
-          "slotAvailability":9,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 4
-        }
-      ]
-    },
-    {
-      "name": "Harsh Baluni",
-      "address": "Flat no. 111, Ganga Orchards, Koregaon Park, Pune",
-      "mailId": "customer6@xyz.com",
-      "id": 6,
-      "contact": "9988543444",
-      "govtId": "111122229999",
-      "activities": [
-        {
-          "name": "Aaushdi Chemist",
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 10.30 am",
-          "slotAvailability":9,
-          "storeAddress": "Lane no. 2, Koregaon Park, Pune",
-          "uniqueId": "889456",
-          "id": 2
-        },
-        {
-          "name": "Pravin General Store",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "573459",
-          "slotAvailability":7,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 1
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/10/2020",
-          "slotTime": "3.00 pm - 4.00 pm",
-          "uniqueId": "573499",
-          "slotAvailability":2,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        }
-      ]
-    },
-    {
-      "name": "Vedant Dalal",
-      "address": "Flat no. B-102, Citadel, BT Kawade, Pune",
-      "mailId": "customer7@xyz.com",
-      "id": 7,
-      "contact": "9988543413",
-      "govtId": "666622223333",
-      "activities": [
-        {
-          "name": "Om Medical",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "576756",
-          "slotAvailability":1,
-          "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-          "id": "3"
-        },
-        {
-          "name": "Laxmi Mart",
-          "slotTime": "10.00 am - 11.00 am",
-          "date": "4/11/2020",
-          "uniqueId": "997456",
-          "slotAvailability":6,
-          "storeAddress": "Street No 12, JM Road, Pune",
-          "id": 7
-        }
-      ]
-    },
-    {
-      "name": "Sanket Kamble",
-      "address": "Flat no. 1, Jagtap Society, JM Road, Pune",
-      "mailId": "customer8@xyz.com",
-      "id": 8,
-      "contact": "9988443444",
-      "govtId": "333377773333",
-      "activities": [
-        {
-          "name": "Aaushdi Chemist",
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 10.30 am",
-          "uniqueId": "599996",
-          "slotAvailability":4,
-          "storeAddress": "Lane no. 2, Koregaon Park, Pune",
-          "id": 2
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/11/2020",
-          "slotTime": "2.00 pm - 3.00 pm",
-          "uniqueId": "573675",
-          "slotAvailability":9,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        },
-        {
-          "name": "Om Medical",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "573212",
-          "slotAvailability":3,
-          "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
-          "id": "3"
-        }
-      ]
-    },
-    {
-      "name": "Anushka Singh",
-      "address": "Flat no. 44, Sicilia, Deccan, Pune",
-      "mailId": "customer9@xyz.com",
-      "id": 9,
-      "contact": "8088443444",
-      "govtId": "223344113333",
-      "activities": [
-        {
-          "name": "Poona General Store",
-          "date": "4/11/2020",
-          "slotTime": "9.00 am - 9.30 am",
-          "uniqueId": "541156",
-          "slotAvailability":6,
-          "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
-          "id": 4
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/10/2020",
-          "slotTime": "3.00 pm - 4.00 pm",
-          "uniqueId": "588796",
-          "slotAvailability":11,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        },
-        {
-          "name": "Shri Grocery Mart",
-          "id": 6,
-          "date": "4/13/2020",
-          "slotTime": "11.30 am - 12.00 am",
-          "uniqueId": "889456",
-          "slotAvailability":3,
-          "storeAddress": "Lane no. 5, Koregaon Park, Pune"
-        },
-        {
-          "date": "4/11/2020",
-          "slotTime": "10.00 am - 11.00 am",
-          "name": "Pravin General Store",
-          "uniqueId": "121236",
-          "slotAvailability":4,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 1
-        }
-      ]
-    },
-    {
-      "name": "Tanya Sharma",
-      "address": "Flat no. A-1, Grand Towers, JM Road, Pune",
-      "mailId": "customer10@xyz.com",
-      "id": 10,
-      "contact": "8988443444",
-      "govtId": "989877663344",
-      "activities": [
-        {
-          "name": "Poona General Store",
-          "date": "4/11/2020",
-          "slotTime": "9.00 am - 9.30 am",
-          "uniqueId": "889456",
-          "slotAvailability":9,
-          "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
-          "id": 4
-        },
-        {
-          "name": "Deepak G Store",
-          "date": "4/10/2020",
-          "slotTime": "3.00 pm - 4.00 pm",
-          "uniqueId": "998826",
-          "slotAvailability":4,
-          "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
-          "id": 5
-        },
-        {
-          "name": "Pravin General Store",
-          "date": "4/11/2020",
-          "slotTime": "11.00 am - 12.00 am",
-          "uniqueId": "889456",
-          "slotAvailability":9,
-          "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
-          "id": 1
-        }
-      ]
-    }
-  ]
-}
+    "stores": [
+      {
+        "name": "Pravin General Store",
+        "address": "S. No. 7, Clover Heights, Rastapeth, Pune",
+        "type": "Grocery Store",
+        "id": 1,
+        "contact": "9876543210",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "123456789123",
+        "noOfPeoplePerSlot": "15",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 1,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Azan General Store",
+        "address": "S. No. 23, aditya Heights, kodhapur, Hyderabad",
+        "type": "Grocery Store",
+        "id": 22,
+        "contact": "9800453892",
+        "openTime": "9.00 am",
+        "closeTime": "12.00 pm",
+        "slotTime": "0.5 hr",
+        "govtId": "H123FR4567",
+        "noOfPeoplePerSlot": "15",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "slotAvailability": 15,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "slotAvailability": 12,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "slotAvailability": 10,
+            "id": 3
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.30 am - 11.00 am",
+            "slotAvailability": 10,
+            "id": 4
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 11.30 am",
+            "slotAvailability": 4,
+            "id": 5
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.30 am - 12.00 am",
+            "slotAvailability": 3,
+            "id": 6
+          }
+        ]
+      },
+      {
+        "name": "Chandrashekhar Medical Store",
+        "address": "Apt No. 24, Near KFC, Gacchibowli, Hyderabad",
+        "type": "Medical Store",
+        "id": 23,
+        "contact": "9872829401",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "20 min",
+        "govtId": "H23904HF80",
+        "noOfPeoplePerSlot": "5",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 9.20 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.20 am - 9.40 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.40 am - 10.00 am",
+            "slotAvailability": 4,
+            "id": 3
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.20 am",
+            "slotAvailability": 0,
+            "id": 4
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.20 am - 10.40 am",
+            "slotAvailability": 2,
+            "id": 5
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.40 am - 11.00 am",
+            "slotAvailability": 1,
+            "id": 6
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 11.20 am",
+            "slotAvailability": 5,
+            "id": 7
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.20 am - 11.40 am",
+            "slotAvailability": 2,
+            "id": 8
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.40 am - 12.00 am",
+            "slotAvailability": 4,
+            "id": 9
+          }
+        ]
+      },
+      {
+        "name": "Ehsan General Store",
+        "address": "S. No. 29, KK Heights, Indira Nagar, Hyderabad",
+        "type": "Grocery Store",
+        "id": 24,
+        "contact": "990002345",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "H890OKLY78",
+        "noOfPeoplePerSlot": "15",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 1,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Vijay Medical Store",
+        "address": "House No 3, Manaswini Heights, Jubilee Hills, Hyderabad",
+        "type": "Medical Store",
+        "id": 25,
+        "contact": "8923745600",
+        "openTime": "9.00 am",
+        "closeTime": "12.00 pm",
+        "slotTime": "1 hr",
+        "govtId": "HYS3456780",
+        "noOfPeoplePerSlot": "15",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 3,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 2,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 15,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Yamini General Store",
+        "address": "S. No. 9, Ram Nagar, Banjara Hills, Hyderabad",
+        "type": "Grocery Store",
+        "id": 26,
+        "contact": "9980765860",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "HGB5439087",
+        "noOfPeoplePerSlot": "20",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 18,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Zathura General Store",
+        "address": "S. No. 7, House No 2, Kalyani Nagar, Hyderabad",
+        "type": "Grocery Store",
+        "id": 27,
+        "contact": "9859302850",
+        "openTime": "8.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "2 hr",
+        "govtId": "HVT9870654",
+        "noOfPeoplePerSlot": "20",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "8.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 12.00 am",
+            "slotAvailability": 15,
+            "id": 2
+          }
+        ]
+      },
+      {
+        "name": "Sreenivas Medical Store",
+        "address": "St. No. 33, Nampally, IT park, Hyderabad",
+        "type": "Medical Store",
+        "id": 28,
+        "contact": "9745629800",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "HJE4876390",
+        "noOfPeoplePerSlot": "8",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 5,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 7,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Kaushik Medical Store",
+        "address": "St. No. 9, ICICI Bank, Nanakramguda, Hyderabad",
+        "type": "Medical Store",
+        "id": 29,
+        "contact": "9436748930",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "WSD456RGT0",
+        "noOfPeoplePerSlot": "12",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 1,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Ranadeep General Store",
+        "address": "S. No. 1, Manthri Hills, Lingampally, Hyderabad",
+        "type": "Grocery Store",
+        "id": 30,
+        "contact": "9034567890",
+        "openTime": "9.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "GHB478E290",
+        "noOfPeoplePerSlot": "15",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 10,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 1,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Aaushdi Chemist",
+        "address": "Lane no. 2, Koregaon Park, Pune",
+        "type": "Medical Store",
+        "id": 2,
+        "contact": "0123456789",
+        "openTime": "9.00 am",
+        "closeTime": "11.00 pm",
+        "slotTime": "15 min",
+        "govtId": "123456333123",
+        "noOfPeoplePerSlot": "8",
+        "slotList": [
+          {
+            "date": "4/12/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "slotAvailability": 2,
+            "id": 1
+          },
+          {
+            "date": "4/12/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "slotAvailability": 7,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "slotAvailability": 6,
+            "id": 3
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.30 am - 11.00 am",
+            "slotAvailability": 2,
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Om Medical",
+        "address": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+        "type": "Medical Store",
+        "id": 3,
+        "contact": "978712121",
+        "openTime": "10.00 am",
+        "closeTime": "12.00pm",
+        "slotTime": "1 hr",
+        "govtId": "123456787773",
+        "noOfPeoplePerSlot": "5",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 2,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 4,
+            "id": 2
+          }
+        ]
+      },
+      {
+        "name": "Poona General Store",
+        "address": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+        "type": "Grocery Store",
+        "id": 4,
+        "contact": "989823235",
+        "openTime": "9.00 am",
+        "closeTime": "10.30 am",
+        "slotTime": "30 min",
+        "govtId": "883456789123",
+        "noOfPeoplePerSlot": "10",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "slotAvailability": 6,
+            "id": 1
+          },
+          {
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "slotAvailability": 1,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "slotAvailability": 8,
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Deepak G Store",
+        "address": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+        "type": "Grocery Store",
+        "id": 5,
+        "contact": "989823277",
+        "openTime": "2.00 pm",
+        "closeTime": "2.00 pm",
+        "slotTime": "1 hr",
+        "govtId": "553456789123",
+        "noOfPeoplePerSlot": "10",
+        "slotList": [
+          {
+            "date": "4/11/2020",
+            "slotTime": "2.00 pm - 3.00 pm",
+            "slotAvailability": 6,
+            "id": 1
+          },
+          {
+            "date": "4/10/2020",
+            "slotTime": "3.00 pm - 4.00 pm",
+            "slotAvailability": 4,
+            "id": 2
+          }
+        ]
+      },
+      {
+        "name": "Shri Grocery Mart",
+        "address": "Lane no. 5, Koregaon Park, Pune",
+        "type": "Grocery Store",
+        "id": 6,
+        "contact": "8893456789",
+        "openTime": "10.00 am",
+        "closeTime": "12.00 pm",
+        "slotTime": "30 min",
+        "govtId": "127756789123",
+        "noOfPeoplePerSlot": "10",
+        "slotList": [
+          {
+            "date": "4/12/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "slotAvailability": 2,
+            "id": 1
+          },
+          {
+            "date": "4/12/2020",
+            "slotTime": "10.30 am - 11.00 am",
+            "slotAvailability": 3,
+            "id": 2
+          },
+          {
+            "date": "4/10/2020",
+            "slotTime": "11.00 am - 11.30 am",
+            "slotAvailability": 2,
+            "id": 3
+          },
+          {
+            "date": "4/13/2020",
+            "slotTime": "11.30 am - 12.00 am",
+            "slotAvailability": 5,
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Laxmi Mart",
+        "address": "Street No 12, JM Road, Pune",
+        "type": "Grocery Store",
+        "id": 7,
+        "contact": "9998456789",
+        "openTime": "9.00 am",
+        "closeTime": "12.00 pm",
+        "slotTime": "1 hr",
+        "govtId": "997456789123",
+        "noOfPeoplePerSlot": "10",
+        "slotList": [
+          {
+            "date": "4/12/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "slotAvailability": 3,
+            "id": 1
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "slotAvailability": 7,
+            "id": 2
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "slotAvailability": 2,
+            "id": 3
+          },
+          {
+            "date": "4/13/2020",
+            "slotTime": "4.00 am - 5.00 am",
+            "slotAvailability": 4,
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Pratigya General stores",
+        "address": "S. No. 8, Disha Heights, Hadapsar, Pune",
+        "type": "Grocery Store",
+        "contact": "9876543215",
+        "openTime": "10.00 am",
+        "closeTime": "12.00 pm",
+        "slotTime": "30 min",
+        "govtId": "123456789993",
+        "noOfPeoplePerSlot": "9",
+        "slotList": [],
+        "id": 8
+      }
+    ],
+    "customers": [
+      {
+        "name": "Rahul Mehra",
+        "address": "Flat no.6, Yellow Blossom, BT Kawade Road, Pune",
+        "mailId": "customer@xyz.com",
+        "id": 1,
+        "govtId": "111122223333",
+        "contact": "9876543210",
+        "activities": [
+          {
+            "name": "Deepak G Store",
+            "slotTime": "2.00 am - 3.00 am",
+            "slotAvailability":4,
+            "date": "4/11/2020",
+            "uniqueId": "123456",
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "uniqueId": "623456",
+            "slotAvailability":3,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          },
+          {
+            "name": "Pravin General Store",
+            "slotTime": "11.00 am - 12.00 am",
+            "date": "4/11/2020",
+            "uniqueId": "523456",
+            "slotAvailability":2,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 1
+          },
+          {
+            "name": "Laxmi Mart",
+            "date": "4/13/2020",
+            "slotTime": "4.00 am - 5.00 am",
+            "uniqueId": "923456",
+            "slotAvailability":7,
+            "storeAddress": "Street No 12, JM Road, Pune",
+            "id": 7
+          }
+        ]
+      },
+      {
+        "name": "Mohit Kulkarni",
+        "address": "Flat no.C 201, Laxmi Residence, Bibwewadi, Pune",
+        "mailId": "customer2@xyz.com",
+        "id": 2,
+        "govtId": "111144443333",
+        "contact": "9876543212",
+        "activities": [
+          {
+            "name": "Deepak G Store",
+            "slotTime": "2.00 am - 3.00 am",
+            "date": "4/11/2020",
+            "uniqueId": "573456",
+            "slotAvailability":2,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "593456",
+            "slotAvailability":7,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          },
+          {
+            "name": "Poona General Store",
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "uniqueId": "873456",
+            "slotAvailability":7,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Darshan Raval",
+        "address": "Flat no.C 301, omni residency, Lingampally, Hyderabad",
+        "mailId": "tseries@xyz.com",
+        "id": 3,
+        "govtId": "287390873456",
+        "contact": "9034765890",
+        "activities": [
+          {
+            "name": "Azan General Store",
+            "slotTime": "10.00 am - 10.30 am",
+            "date": "4/11/2020",
+            "uniqueId": "675489",
+            "slotAvailability":15,
+            "storeAddress": "S. No. 23, aditya Heights, kondhapur, Hyderabad",
+            "id": 1
+          },
+          {
+            "name": "Ehsan General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "645908",
+            "slotAvailability":15,
+            "storeAddress": "S. No. 29, KK Heights, Indira Nagar, Hyderabad",
+            "id": 2
+          },
+          {
+            "name": "Chandrashekhar Medical Store",
+            "date": "4/10/2020",
+            "slotTime": "9.40 am - 10.00 am",
+            "uniqueId": "890456",
+            "slotAvailability":5,
+            "storeAddress": "Apt No. 24, Near KFC, Gacchibowli, Hyderabad",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Vishal Mishra",
+        "address": "Flat no.DC 501, Sri Ramnagar, Kondhapur, Hyderabad",
+        "mailId": "vmmusic2@xyz.com",
+        "id": 4,
+        "govtId": "5678234",
+        "contact": "96234557890",
+        "activities": [
+          {
+            "name": "Ehsan General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "645909",
+            "slotAvailability":15,
+            "storeAddress": "S. No. 29, KK Heights, Indira Nagar, Hyderabad",
+            "id": 3
+          },
+          {
+            "name": "Vijay Medical Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "678345",
+            "slotAvailability":15,
+            "storeAddress": "House No. 3, Manaswini Heights, Jubilee Hills, Hyderabad",
+            "id": 4
+          },
+          {
+            "name": "Yamini General Store",
+            "date": "4/10/2020",
+            "slotTime": "9.00 am - 10.00 am",
+            "uniqueId": "873456",
+            "slotAvailability":20,
+            "storeAddress": "S. No. 9, Ram Nagar, Banjara Hills, Hyderabad",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "name": "Lisa Mishra",
+        "address": "Flat no.C 406, Manthri Hills, Hyderabad",
+        "mailId": "lisam2@xyz.com",
+        "id": 5,
+        "govtId": "763898076545",
+        "contact": "9123456789",
+        "activities": [
+          {
+            "name": "Sreenivas Medical Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "678346",
+            "slotAvailability":8,
+            "storeAddress": "St. No. 33, Nampally, IT park, Hyderabad",
+            "id": 1
+          },
+          {
+            "name": "Ranadeep General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "645910",
+            "slotAvailability":15,
+            "storeAddress": "S. No. 1, Manthri Hills, Lingampally, Hyderabad",
+            "id": 2
+          },
+          {
+            "name": "Kaushik Medical Store",
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "uniqueId": "873456",
+            "slotAvailability":7,
+            "storeAddress": "St. No. 9, ICICI Bank, Nanakramguda, Hyderabad",
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Rahul Dev",
+        "address": "Flat no.D444, Market Value, Hyderabad",
+        "mailId": "rade2@xyz.com",
+        "id": 6,
+        "govtId": "121212121212",
+        "contact": "9811112234",
+        "activities": [
+          {
+            "name": "Deepak G Store",
+            "slotTime": "2.00 am - 3.00 am",
+            "date": "4/11/2020",
+            "uniqueId": "573423",
+            "slotAvailability":2,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "593433",
+            "slotAvailability":7,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          },
+          {
+            "name": "Poona General Store",
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "uniqueId": "873444",
+            "slotAvailability":7,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Richa Mankar",
+        "address": "Flat no.C333, Gangotri Villa, Yawatmal, Maharashtra",
+        "mailId": "rmkr2@xyz.com",
+        "id": 7,
+        "govtId": "999988887777",
+        "contact": "8890764580",
+        "activities": [
+          {
+            "name": "Deepak G Store",
+            "slotTime": "2.00 am - 3.00 am",
+            "date": "4/11/2020",
+            "uniqueId": "5734688",
+            "slotAvailability":2,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "5934087",
+            "slotAvailability":7,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          },
+          {
+            "name": "Poona General Store",
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "uniqueId": "873456",
+            "slotAvailability":7,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Shivam Kakad",
+        "address": "Flat no.412, MG Road, Pune",
+        "mailId": "customer3@xyz.com",
+        "id": 8,
+        "contact": "9976543210",
+        "govtId": "111155553333",
+        "activities": [
+          {
+            "name": "Aaushdi Chemist",
+            "date": "4/12/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "uniqueId": "579456",
+            "slotAvailability":3,
+            "storeAddress": "Lane no. 2, Koregaon Park, Pune",
+            "id": 2
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "573886",
+            "slotAvailability":6,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/10/2020",
+            "slotTime": "3.00 pm - 4.00 pm",
+            "uniqueId": "993456",
+            "slotAvailability":6,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          }
+        ]
+      },
+      {
+        "name": "Bhavya Mehta",
+        "address": "Flat no. 202, Ganga Society, Koregaon Park, Pune",
+        "mailId": "customer4@xyz.com",
+        "id": 9,
+        "contact": "9976543444",
+        "govtId": "999922223333",
+        "activities": [
+          {
+            "name": "Aaushdi Chemist",
+            "date": "4/12/2020",
+            "uniqueId": "993456",
+            "slotTime": "9.00 am - 9.30 am",
+            "slotAvailability":9,
+            "storeAddress": "Lane no. 2, Koregaon Park, Pune",
+            "id": 2
+          },
+          {
+            "name": "Pravin General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "573886",
+            "slotAvailability":10,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 1
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/11/2020",
+            "slotTime": "2.00 pm - 3.00 pm",
+            "uniqueId": "999456",
+            "slotAvailability":2,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          }
+        ]
+      },
+      {
+        "name": "Umakant Gupta",
+        "address": "Flat no. 97, Orchard Lily, MG Road, Pune",
+        "mailId": "customer5@xyz.com",
+        "id": 10,
+        "contact": "9976541444",
+        "govtId": "111188883333",
+        "activities": [
+          {
+            "name": "Poona General Store",
+            "date": "4/10/2020",
+            "slotTime": "9.30 am - 10.00 am",
+            "uniqueId": "543456",
+            "slotAvailability":2,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 2
+          },
+          {
+            "name": "Pravin General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "573898",
+            "slotAvailability":9,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 4
+          }
+        ]
+      },
+      {
+        "name": "Harsh Baluni",
+        "address": "Flat no. 111, Ganga Orchards, Koregaon Park, Pune",
+        "mailId": "customer6@xyz.com",
+        "id": 11,
+        "contact": "9988543444",
+        "govtId": "111122229999",
+        "activities": [
+          {
+            "name": "Aaushdi Chemist",
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "slotAvailability":9,
+            "storeAddress": "Lane no. 2, Koregaon Park, Pune",
+            "uniqueId": "889456",
+            "id": 2
+          },
+          {
+            "name": "Pravin General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "573459",
+            "slotAvailability":7,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 1
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/10/2020",
+            "slotTime": "3.00 pm - 4.00 pm",
+            "uniqueId": "573499",
+            "slotAvailability":2,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          }
+        ]
+      },
+      {
+        "name": "Vedant Dalal",
+        "address": "Flat no. B-102, Citadel, BT Kawade, Pune",
+        "mailId": "customer7@xyz.com",
+        "id": 12,
+        "contact": "9988543413",
+        "govtId": "666622223333",
+        "activities": [
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "576756",
+            "slotAvailability":1,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": "3"
+          },
+          {
+            "name": "Laxmi Mart",
+            "slotTime": "10.00 am - 11.00 am",
+            "date": "4/11/2020",
+            "uniqueId": "997456",
+            "slotAvailability":6,
+            "storeAddress": "Street No 12, JM Road, Pune",
+            "id": 7
+          }
+        ]
+      },
+      {
+        "name": "Sanket Kamble",
+        "address": "Flat no. 1, Jagtap Society, JM Road, Pune",
+        "mailId": "customer8@xyz.com",
+        "id": 13,
+        "contact": "9988443444",
+        "govtId": "333377773333",
+        "activities": [
+          {
+            "name": "Aaushdi Chemist",
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 10.30 am",
+            "uniqueId": "599996",
+            "slotAvailability":4,
+            "storeAddress": "Lane no. 2, Koregaon Park, Pune",
+            "id": 2
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/11/2020",
+            "slotTime": "2.00 pm - 3.00 pm",
+            "uniqueId": "573675",
+            "slotAvailability":9,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Om Medical",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "573212",
+            "slotAvailability":3,
+            "storeAddress": "Sadhunana Tupe Vasti, Malwadi, Hadapsar, Pune, Maharashtra 411028",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "name": "Anushka Singh",
+        "address": "Flat no. 44, Sicilia, Deccan, Pune",
+        "mailId": "customer9@xyz.com",
+        "id": 14,
+        "contact": "8088443444",
+        "govtId": "223344113333",
+        "activities": [
+          {
+            "name": "Poona General Store",
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "uniqueId": "541156",
+            "slotAvailability":6,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 4
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/10/2020",
+            "slotTime": "3.00 pm - 4.00 pm",
+            "uniqueId": "588796",
+            "slotAvailability":11,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Shri Grocery Mart",
+            "id": 6,
+            "date": "4/13/2020",
+            "slotTime": "11.30 am - 12.00 am",
+            "uniqueId": "889456",
+            "slotAvailability":3,
+            "storeAddress": "Lane no. 5, Koregaon Park, Pune"
+          },
+          {
+            "date": "4/11/2020",
+            "slotTime": "10.00 am - 11.00 am",
+            "name": "Pravin General Store",
+            "uniqueId": "121236",
+            "slotAvailability":4,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "name": "Tanya Sharma",
+        "address": "Flat no. A-1, Grand Towers, JM Road, Pune",
+        "mailId": "customer10@xyz.com",
+        "id": 15,
+        "contact": "8988443444",
+        "govtId": "989877663344",
+        "activities": [
+          {
+            "name": "Poona General Store",
+            "date": "4/11/2020",
+            "slotTime": "9.00 am - 9.30 am",
+            "uniqueId": "889456",
+            "slotAvailability":9,
+            "storeAddress": "1223, Fergusson College Rd, Ganeshwadi, Deccan Gymkhana, Pune, Maharashtra 411004",
+            "id": 4
+          },
+          {
+            "name": "Deepak G Store",
+            "date": "4/10/2020",
+            "slotTime": "3.00 pm - 4.00 pm",
+            "uniqueId": "998826",
+            "slotAvailability":4,
+            "storeAddress": "Umbrella, 1 317, Somwar Peth, Somwar Peth, Pune, Maharashtra 411011",
+            "id": 5
+          },
+          {
+            "name": "Pravin General Store",
+            "date": "4/11/2020",
+            "slotTime": "11.00 am - 12.00 am",
+            "uniqueId": "889456",
+            "slotAvailability":9,
+            "storeAddress": "S. No. 7, Clover Heights, Rastapeth, Pune",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  }
+  

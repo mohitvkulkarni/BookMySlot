@@ -6,21 +6,21 @@ class CustomerStore extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="row" style={{ justifyContent: "center" }}>
-          <div className="col-11 row slotContainerDiv">
-            <div className="col-3 centerDiv">
-              <img src={this.props.img} alt="" style={{ height: 50 }} />
-            </div>
-            <div className="col-9">
-              <h4 className="slotListHeader">
-                <b> {this.props.name} </b>
-              </h4>
-              <h5 className="slotListValue"> {this.props.address}</h5>
-              <h5 className="slotListValue"> {this.props.type}</h5>
-            </div>
+      <div className="row" style={{ justifyContent: "center" }}>
+        <div className="col-11 row slotContainerDiv">
+          <div className="col-3 centerDiv">
+            <img src={this.props.img} alt="" style={{ height: 40 }} />
+          </div>
+          <div className="col-9">
+            <h6 className="slotListText" style={{ fontWeight: 600 }}>
+              {this.props.name}
+            </h6>
+            <h6 className="slotListText">{this.props.address}</h6>
+            <h6 className="slotListText">{this.props.type}</h6>
           </div>
         </div>
       </div>
+    </div>
     );
   }
 }
