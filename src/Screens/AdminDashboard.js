@@ -9,7 +9,35 @@ import consumer from "../assets/images/consumer.png";
 import store from "../assets/images/store.png";
 
 class AdminDashboard extends React.Component {
-  state = {};
+  state = {
+    isColor: {
+      store: "#d3d3d3",
+      consumer: "",
+    },
+  };
+
+  getList = (type) => {
+    switch (type) {
+      case "store":
+        this.setState({
+          isColor: {
+            store: "#d3d3d3",
+            consumer: "",
+          },
+        });
+        break;
+      case "consumer":
+        this.setState({
+          isColor: {
+            store: "",
+            consumer: "#d3d3d3",
+          },
+        });
+        break;
+      default:
+        break;
+    }
+  };
 
   componentDidMount() {}
 
@@ -52,7 +80,7 @@ class AdminDashboard extends React.Component {
                   float: "right",
                   borderTopRightRadius: 0,
                   borderBottomRightRadius: 0,
-                  backgroundColor: "#d3d3d3",
+                  backgroundColor: this.state.isColor.store,
                 }}
                 type="button"
               >
@@ -71,6 +99,7 @@ class AdminDashboard extends React.Component {
                   float: "left",
                   borderTopLeftRadius: 0,
                   borderBottomLeftRadius: 0,
+                  backgroundColor: this.state.isColor.consumer,
                 }}
                 type="button"
               >

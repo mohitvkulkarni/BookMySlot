@@ -41,47 +41,55 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="row" style={{ padding: 0 }}>
-        {!this.props.name ? null : (
-          <div className="col-2 header" style={{ margin: 0 }}>
-            <Sidebar
-              sidebar={<SidebarContent />}
-              open={this.state.sidebarOpen}
-              onSetOpen={this.onSetSidebarOpen}
-              styles={{
-                sidebar: { background: "white" },
-                root: this.state.rootClass,
-              }}
-            >
-              <button
-                onClick={() => this.onSetSidebarOpen(true)}
-                style={{
-                  backgroundColor: "transparent",
-                  border: "none",
-                }}
-              >
-                <img alt="" src={hamIcon} style={{ height: 30 }} />
-              </button>
-            </Sidebar>
-          </div>
-        )}
-
-        <div
-          className="col-10 header"
-          style={{ textAlign: "center", display: "flex", margin: 0 }}
-        >
-          {!this.props.name ? (
+      <div>
+        {!this.props.name ? (
+          <div
+            className="col-12 header"
+            style={{ textAlign: "center", display: "flex", margin: 0 }}
+          >
             <div className="zefi col-12">
               <img alt="" src={booking} className="headerLogo" />
               BOOKMYSLOT
             </div>
-          ) : (
-            <div className="zefi col-12">
-              <img alt="" src={this.props.headerImage} className="headerLogo" />
-              {this.props.name}
+          </div>
+        ) : (
+          <div className="row" style={{ padding: 0 }}>
+            <div className="col-2 header" style={{ margin: 0 }}>
+              <Sidebar
+                sidebar={<SidebarContent />}
+                open={this.state.sidebarOpen}
+                onSetOpen={this.onSetSidebarOpen}
+                styles={{
+                  sidebar: { background: "white" },
+                  root: this.state.rootClass,
+                }}
+              >
+                <button
+                  onClick={() => this.onSetSidebarOpen(true)}
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "none",
+                  }}
+                >
+                  <img alt="" src={hamIcon} style={{ height: 30 }} />
+                </button>
+              </Sidebar>
             </div>
-          )}
-        </div>
+            <div
+              className="col-10 header"
+              style={{ textAlign: "center", display: "flex", margin: 0 }}
+            >
+              <div className="zefi col-12">
+                <img
+                  alt=""
+                  src={this.props.headerImage}
+                  className="headerLogo"
+                />
+                {this.props.name}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }

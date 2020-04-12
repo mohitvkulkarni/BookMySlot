@@ -12,11 +12,16 @@ class RegistrationSuccessful extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Registration Successful!" />
+          <Header name="Successful!" />
           <br />
           <br />
-          <div>You can enter credentials at the login screen</div>
-          <SuccessfulRegistrationContainer borderColor={"#35c635"} imgPath={tickDeposit} />
+          <div style={{ padding: 10 }}>
+            You can enter credentials at the login screen
+          </div>
+          <SuccessfulRegistrationContainer
+            borderColor={"#35c635"}
+            imgPath={tickDeposit}
+          />
         </Layout>
       </div>
     );

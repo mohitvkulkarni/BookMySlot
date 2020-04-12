@@ -23,7 +23,10 @@ class RegisterConsumer extends Component {
         <Layout>
           <Header />
           <div style={{ marginTop: "2rem", textAlign: "initial" }}>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="mobile">
                 Mobile No
               </label>
@@ -34,7 +37,10 @@ class RegisterConsumer extends Component {
                 className="textInput"
               />
             </div>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="address">
                 Address
               </label>
@@ -45,7 +51,10 @@ class RegisterConsumer extends Component {
                 className="textInput"
               />
             </div>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="govtId">
                 Govt. Id No.
               </label>

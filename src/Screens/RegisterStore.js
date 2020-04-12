@@ -22,7 +22,10 @@ class RegisterStore extends Component {
         <Layout>
           <Header></Header>
           <div style={{ marginTop: "2rem", textAlign: "initial" }}>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="mobile">
                 Mobile No
               </label>
@@ -33,7 +36,10 @@ class RegisterStore extends Component {
                 className="textInput"
               />
             </div>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="address">
                 Store Address
               </label>
@@ -44,7 +50,10 @@ class RegisterStore extends Component {
                 className="textInput"
               />
             </div>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="govtId">
                 Store GST No.
               </label>
@@ -55,7 +64,10 @@ class RegisterStore extends Component {
                 className="textInput"
               />
             </div>
-            <div className="col-12">
+            <div
+              className="col-12 row"
+              style={{ justifyContent: "center", alignItems: "center" }}
+            >
               <label className="labelLogin" htmlFor="type">
                 Type
               </label>
