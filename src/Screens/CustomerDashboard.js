@@ -3,12 +3,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../Styles/styles.css";
 import Header from "../Components/Header";
 import Layout from "../Components/Layout";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import CustomerSearchBar from "../Components/CustomerSearchBar";
-=======
-import Searchbar from "../Components/Searchbar";
->>>>>>> da73c1f8f98164b51688f9490d261f26106cb35f
 import "../Styles/stylesSearchBar.css";
 import CustomerStoreList from "../Components/CustomerStoreList";
 
