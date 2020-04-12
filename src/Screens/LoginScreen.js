@@ -72,7 +72,10 @@ class LoginScreen extends Component {
               {/* <div className="centerDivs">
                 <img src={enter} alt="" height={150} style={{ margin: 10 }} />
               </div> */}
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="mail">
                   Email
                 </label>
@@ -85,7 +88,10 @@ class LoginScreen extends Component {
                   className="textInput"
                 />
               </div>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="password">
                   Password
                 </label>

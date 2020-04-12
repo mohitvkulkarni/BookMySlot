@@ -41,7 +41,7 @@ class CustomerStoreDetail extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Customer Dashboard" />
+          <Header name="Customer Dashboard" headerImage = "customer"/>
           <div className="row" style={{ justifyContent: "center" }}>
             <div className="cardTile col-11 row">
               <div className="col-4 centerDiv">

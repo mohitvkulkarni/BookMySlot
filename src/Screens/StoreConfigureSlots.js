@@ -18,31 +18,43 @@ class StoreConfigureSlots extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Store Dashboard" />
+          <Header name="Store Dashboard" headerImage= "shop" />
           <div style={{ paddingTop: 20 }}>
             <h3 style={{ color: "#333d79ff" }}>
               <b>Configure Slots</b>
             </h3>
             <div className="row" style={{ textAlign: "left" }}>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="openTime">
                   Date:
                 </label>
                 <DatePickerComponent />
               </div>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="openTime">
                   Open Time:
                 </label>
                 <TimePickerComponent />
               </div>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="openTime">
                   Close Time:
                 </label>
                 <TimePickerComponent />
               </div>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="slotsNo">
                   No. of slots
                 </label>
@@ -53,7 +65,10 @@ class StoreConfigureSlots extends React.Component {
                   className="textInput"
                 />
               </div>
-              <div className="col-12">
+              <div
+                className="col-12 row"
+                style={{ justifyContent: "center", alignItems: "center" }}
+              >
                 <label className="labelLogin" htmlFor="slotPeople">
                   No of people in each slot
                 </label>

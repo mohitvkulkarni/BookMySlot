@@ -57,7 +57,7 @@ class Login extends Component {
           <Header />
           <div>
             <div style={{ marginTop: "2rem", textAlign: "initial" }}>
-              <div className="col-12">
+              <div className="col-12 row" style={{justifyContent: "center", alignItems: "center"}}>
                 <label className="labelLogin" htmlFor="name">
                   Name
                 </label>
@@ -70,7 +70,7 @@ class Login extends Component {
                   className="textInput"
                 />
               </div>
-              <div className="col-12">
+              <div className="col-12 row" style={{justifyContent: "center", alignItems: "center"}}>
                 <label className="labelLogin" htmlFor="mail">
                   Email
                 </label>
@@ -83,7 +83,7 @@ class Login extends Component {
                   className="textInput"
                 />
               </div>
-              <div className="col-12">
+              <div className="col-12 row" style={{justifyContent: "center", alignItems: "center"}}>
                 <label className="labelLogin" htmlFor="type">
                   Type
                 </label>
@@ -100,7 +100,7 @@ class Login extends Component {
                   <option value="consumer">Consumer</option>
                 </select>
               </div>
-              <div className="col-12">
+              <div className="col-12 row" style={{justifyContent: "center", alignItems: "center"}}>
                 <label className="labelLogin" htmlFor="password">
                   Password
                 </label>

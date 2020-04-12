@@ -18,7 +18,7 @@ class StoreDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name={"Store Dashboard"} />
+          <Header name={"Store Dashboard"} headerImage = {"shop"} />
           <div className="row">
             <div className="col-6 noSpace">
               <StatsCard header={"Customers Visited Today"} value={"256"} />

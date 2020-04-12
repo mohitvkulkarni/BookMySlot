@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 class SuccessFulRegistrationContainer extends React.Component {
   render() {
     return (
-      <div style={{ padding: 50 }}>
+      <div style={{ padding: "10vw" }}>
         <div
           className="row card"
           style={{
@@ -33,7 +33,7 @@ class SuccessFulRegistrationContainer extends React.Component {
                 style={{ color: "#333d79ff" }}
                 className="btn btn-link"
               >
-                <u>Head back to Login Screen</u>
+                <u>Login Now</u>
               </button>
             </Link>
           </div>
