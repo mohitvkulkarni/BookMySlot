@@ -5,11 +5,12 @@ import Header from "../Components/Header";
 import Layout from "../Components/Layout";
 import Searchbar from "../Components/Searchbar";
 import PeopleRiskList from "../Components/PeopleRiskList";
+import Button from "../Components/Button";
 
 class TrackingBoard extends React.Component {
   state = {
     isColor: {
-      extreme: "#d3d3d3",
+      extreme: "#f6f6f6",
       high: "",
       moderate: "",
     },
@@ -20,7 +21,7 @@ class TrackingBoard extends React.Component {
       case "extreme":
         this.setState({
           isColor: {
-            extreme: "#d3d3d3",
+            extreme: "#f6f6f6",
             high: "",
             moderate: "",
           },
@@ -30,7 +31,7 @@ class TrackingBoard extends React.Component {
         this.setState({
           isColor: {
             extreme: "",
-            high: "#d3d3d3",
+            high: "#f6f6f6",
             moderate: "",
           },
         });
@@ -40,7 +41,7 @@ class TrackingBoard extends React.Component {
           isColor: {
             extreme: "",
             high: "",
-            moderate: "#d3d3d3",
+            moderate: "#f6f6f6",
           },
         });
         break;
@@ -56,7 +57,7 @@ class TrackingBoard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Tracking Board" headerImage = "track"/>
+          <Header name="Tracking Board" headerImage="track" />
           <div
             className="row"
             style={{ padding: 10, justifyContent: "center" }}
@@ -71,7 +72,9 @@ class TrackingBoard extends React.Component {
                   float: "right",
                   borderTopRightRadius: 0,
                   borderBottomRightRadius: 0,
-                  backgroundColor: this.state.isColor.extreme,
+                  color: "#f6f6f6",
+                  backgroundColor: "#9c0000",
+                  borderColor: this.state.isColor.extreme,
                 }}
                 type="button"
                 onClick={() => this.getList("extreme")}
@@ -85,7 +88,9 @@ class TrackingBoard extends React.Component {
                 style={{
                   borderRadius: 0,
                   width: "100%",
-                  backgroundColor: this.state.isColor.high,
+                  color: "#f6f6f6",
+                  backgroundColor: "red",
+                  borderColor: this.state.isColor.high,
                 }}
                 type="button"
                 onClick={() => this.getList("high")}
@@ -100,7 +105,9 @@ class TrackingBoard extends React.Component {
                   float: "left",
                   borderTopLeftRadius: 0,
                   borderBottomLeftRadius: 0,
-                  backgroundColor: this.state.isColor.moderate,
+                  color: "#f6f6f6",
+                  backgroundColor: "#f65e5e",
+                  borderColor: this.state.isColor.moderate,
                 }}
                 type="button"
                 onClick={() => this.getList("moderate")}
@@ -111,7 +118,7 @@ class TrackingBoard extends React.Component {
           </div>
           <div style={{ paddingTop: 20 }}>
             <h4>List of people at risk</h4>
-            <div style={{ height: "45vh", overflowY: "auto" }}>
+            <div style={{ height: "42vh", overflowY: "auto" }}>
               <PeopleRiskList
                 name={"Ganesh Gaikwad"}
                 address={"Bibwewadi, Pune"}
@@ -142,6 +149,11 @@ class TrackingBoard extends React.Component {
               />
             </div>
           </div>
+          <Button
+            label={`Export to Excel`}
+            color={"#333d79ff"}
+            className="loginButton"
+          />
         </Layout>
       </div>
     );
