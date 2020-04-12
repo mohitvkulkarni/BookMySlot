@@ -11,13 +11,8 @@ class CustomerStoreList extends React.Component {
 
   render() {
     return (
-      <div>
+
         <div>
-          <div className="row">
-            <div>
-              <h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>
-            </div>
-          </div>
           <div className="customerStoreListDiv">
             {this.props.stores.map((store) => (
               <Link to={`/CustomerStoreDetail/${store.id}`}>
@@ -32,7 +27,7 @@ class CustomerStoreList extends React.Component {
             ))}
           </div>
         </div>
-      </div>
+
     );
   }
 }

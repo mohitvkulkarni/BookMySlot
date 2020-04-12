@@ -4,23 +4,41 @@ import SearchInput, { createFilter } from "react-search-input";
 // import emails from "./mails";
 
 //const KEYS_TO_FILTERS = ["user.name", "subject", "dest.name"];
+import CustomerStoreList from "../Components/CustomerStoreList";
 
-const Searchbar = () => {
+const CustomerSearchBar = (props) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const searchUpdated = (term) => {
     setSearchTerm(term);
   };
 
-  // const filteredEmails = emails.filter(
-  //   createFilter(searchTerm, KEYS_TO_FILTERS)
-  // );
+   const filteredStores = props.stores.filter(
+     createFilter(searchTerm, props.keys_to_filter)
+  );
 
   return (
     
     <div style={{ margin: 15 }}>
       <SearchInput className="search-input" onChange={searchUpdated} />
-      {/* {filteredEmails.map((email) => {
+      <hr/>
+      <hr />
+      <div>
+      <div className="row">
+            <div>
+              <h3 style={{ color: "#333d79ff" }}>AVAILABLE STORES</h3>
+            </div>
+          </div>
+          <div className="slotListDiv">
+        <CustomerStoreList stores={filteredStores}></CustomerStoreList>
+        </div>
+      </div>
+
+      {
+        console.log(filteredStores)
+
+        
+      /* {filteredEmails.map((email) => {
         return (
           <div className="mail" key={email.id}>
             <div className="from">{email.user.name}</div>
@@ -32,4 +50,4 @@ const Searchbar = () => {
   );
 };
 
-export default Searchbar;
+export default CustomerSearchBar;
