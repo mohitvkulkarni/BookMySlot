@@ -22,6 +22,7 @@ import SignUpScreen from "./Screens/SignUpScreen";
 import TrackingBoard from "./Screens/TrackingBoard";
 import RegistrationSuccessful from "./Screens/RegistrationSuccessful";
 import MyProfileScreen from "./Screens/MyProfileScreen";
+import AboutUs from "./Screens/AboutUs";
 
 function App() {
   return (
@@ -106,6 +107,11 @@ function App() {
             exact
             path="/MyProfileScreen"
             component={MyProfileScreen}
+          ></Route>
+          <Route
+            exact
+            path="/AboutUs"
+            component={AboutUs}
           ></Route>
         </Switch>
       </div>
