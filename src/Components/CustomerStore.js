@@ -12,9 +12,11 @@ class CustomerStore extends React.Component {
               <img src={this.props.img} alt="" style={{ height: 50 }} />
             </div>
             <div className="col-9">
-              <h4 className="slotListHeader">Name: {this.props.name}</h4>
-              <h5 className="slotListValue">Address: {this.props.address}</h5>
-              <h5 className="slotListValue">Type: {this.props.type}</h5>
+              <h4 className="slotListHeader">
+                <b> {this.props.name} </b>
+              </h4>
+              <h5 className="slotListValue"> {this.props.address}</h5>
+              <h5 className="slotListValue"> {this.props.type}</h5>
             </div>
           </div>
         </div>
