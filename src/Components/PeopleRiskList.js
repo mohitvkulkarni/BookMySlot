@@ -12,7 +12,9 @@ class PeopleRiskList extends Component {
               <img src={calendar} alt="" style={{ height: 40 }} />
             </div>
             <div className="col-9">
-              <h6 className="slotListText">Name: {this.props.name}</h6>
+              <h6 className="slotListText" style={{ fontWeight: 600 }}>
+                Name: {this.props.name}
+              </h6>
               <h6 className="slotListText">Store Meet: {this.props.meet}</h6>
               <h6 className="slotListText">Date/Time: {this.props.dateTime}</h6>
               <h6 className="slotListText">Address: {this.props.address}</h6>
