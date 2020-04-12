@@ -42,10 +42,8 @@ class Header extends Component {
   render() {
     return (
       <div className="row" style={{ padding: 0 }}>
-        <div className="col-2 header" style={{ margin: 0 }}>
-          {!this.props.name ? (
-            <br />
-          ) : (
+        {!this.props.name ? null : (
+          <div className="col-2 header" style={{ margin: 0 }}>
             <Sidebar
               sidebar={<SidebarContent />}
               open={this.state.sidebarOpen}
@@ -65,8 +63,9 @@ class Header extends Component {
                 <img alt="" src={hamIcon} style={{ height: 30 }} />
               </button>
             </Sidebar>
-          )}
-        </div>
+          </div>
+        )}
+
         <div
           className="col-10 header"
           style={{ textAlign: "center", display: "flex", margin: 0 }}
