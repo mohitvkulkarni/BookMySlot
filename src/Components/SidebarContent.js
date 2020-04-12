@@ -14,7 +14,7 @@ class SidebarContent extends Component {
             alignItems: "center",
           }}
         >
-          <h2 style={{ padding: "20px", color: "white" }}>Menu</h2>
+          <h3 style={{ padding: "20px", color: "white" }}>Menu</h3>
         </div>
         <br />
         <a style={{ padding: "15px", marginTop: "30px" }}>User Profile</a>
