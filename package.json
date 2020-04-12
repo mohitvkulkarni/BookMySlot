@@ -6,11 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "@toruslabs/torus-embed": "^1.2.0",
     "bootstrap": "^4.4.1",
-    "crypto-js": "^4.0.0",
-    "firebase": "^7.11.0",
-    "human-standard-token-abi": "^2.0.0",
     "rc-time-picker": "^3.7.3",
     "react": "^16.13.0",
     "react-awesome-slider": "^4.1.0",
@@ -24,8 +20,7 @@
     "react-sidebar": "^3.0.2",
     "react-slick": "^0.25.2",
     "search": "^1.0.0",
-    "slick-carousel": "^1.8.1",
-    "web3": "^1.2.6"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
