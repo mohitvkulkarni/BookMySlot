@@ -10,7 +10,6 @@ import store from "../assets/images/store.png";
 import Button from "../Components/Button";
 import { Link } from "react-router-dom";
 
-
 class AdminDashboard extends React.Component {
   state = {
     isColor: {
@@ -49,7 +48,7 @@ class AdminDashboard extends React.Component {
     return (
       <div>
         <Layout>
-          <Header name="Admin Dashboard" headerImage = "admin"/>
+          <Header name="Admin Dashboard" headerImage="admin" />
           <div className="row horizontalSlotRow" style={{ overflow: "auto" }}>
             <div className="horizontalSlotList">
               <div className="col-6">
@@ -85,6 +84,7 @@ class AdminDashboard extends React.Component {
                   borderBottomRightRadius: 0,
                   backgroundColor: this.state.isColor.store,
                 }}
+                onClick={() => this.getList("store")}
                 type="button"
               >
                 <img
@@ -104,6 +104,7 @@ class AdminDashboard extends React.Component {
                   borderBottomLeftRadius: 0,
                   backgroundColor: this.state.isColor.consumer,
                 }}
+                onClick={() => this.getList("consumer")}
                 type="button"
               >
                 Consumer
