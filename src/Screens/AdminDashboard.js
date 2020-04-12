@@ -53,14 +53,14 @@ class AdminDashboard extends React.Component {
   };
 
   componentDidMount() {
-    fetch(" http://b9da7878.ngrok.io/stores")
+    fetch(" http://7001cc15.ngrok.io/stores")
       .then(res => res.json())
       .then(res => {
         this.setState({ stores: res, filteredList: res });
         //console.log(this.state.stores);
       });
 
-    fetch(" http://b9da7878.ngrok.io/customers")
+    fetch(" http://7001cc15.ngrok.io/customers")
       .then(res => res.json())
       .then(res => {
         this.setState({ customers: res });
