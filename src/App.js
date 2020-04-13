@@ -15,6 +15,7 @@ import TrackingBoard from "./Screens/TrackingBoard";
 import RegistrationSuccessful from "./Screens/RegistrationSuccessful";
 import MyProfileScreen from "./Screens/MyProfileScreen";
 import AboutUs from "./Screens/AboutUs";
+import SplashScreen from "./Screens/SplashScreen";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
       <div className="App">
         {/* <IsLoading /> */}
         <Switch>
-          <Route exact path="/" component={LoginScreen}></Route>
+          <Route exact path="/" component={SplashScreen}></Route>
+
+          <Route exact path="/Login" component={LoginScreen}></Route>
           <Route
             exact
             path="/RegisterConsumer"

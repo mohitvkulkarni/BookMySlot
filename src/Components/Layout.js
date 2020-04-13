@@ -6,7 +6,10 @@ class Layout extends Component {
     return (
       <div className="container">
         <div className="row align-items-center">
-          <div className="layout col-lg-6 col-md-6 col-sm-12">
+          <div
+            className="layout col-lg-6 col-md-6 col-sm-12"
+            style={{ ...this.props.style }}
+          >
             {this.props.children}
           </div>
         </div>
