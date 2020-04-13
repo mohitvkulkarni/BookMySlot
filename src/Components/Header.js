@@ -25,6 +25,7 @@ class Header extends Component {
         rootClass: {
           height: "90vh",
           width: 400,
+          zIndex: 999,
         },
       });
     } else {
