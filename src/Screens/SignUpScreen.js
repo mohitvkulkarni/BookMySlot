@@ -126,7 +126,7 @@ class Login extends Component {
                       textDecorationColor: "#b9c0e7",
                       cursor: "pointer",
                     }}
-                    onClick={() => this.props.history.push("/")}
+                    onClick={() => this.props.history.push("/Login")}
                   >
                     Login
                   </span>

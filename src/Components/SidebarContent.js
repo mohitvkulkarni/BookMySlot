@@ -37,7 +37,7 @@ class SidebarContent extends Component {
         </Link>
         <br />
         <hr />
-        <Link to={"/"}>
+        <Link to={"/Login"}>
           <span style={{ margin: "50px" }}>Logout</span>
         </Link>
         <hr />

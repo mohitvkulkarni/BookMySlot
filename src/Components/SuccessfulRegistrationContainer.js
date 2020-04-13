@@ -27,7 +27,7 @@ class SuccessFulRegistrationContainer extends React.Component {
           style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}
         >
           <div className="col-12 centerContent">
-            <Link to="/">
+            <Link to="/Login">
               <button
                 type="button"
                 style={{ color: "#333d79ff" }}
