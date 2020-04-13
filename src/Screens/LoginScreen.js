@@ -48,15 +48,23 @@ class LoginScreen extends Component {
   }
 
   handleLogin = () => {
-    if (this.state.mailId === "admin@xyz.com" && this.state.password === "admin@123") {
+    if (
+      this.state.mailId === "admin@xyz.com" &&
+      this.state.password === "admin@123"
+    ) {
       this.props.history.push("/AdminDashboard");
-    } else if (this.state.mailId === "customer@xyz.com" && this.state.password === "customer@123") {
+    } else if (
+      this.state.mailId === "customer@xyz.com" &&
+      this.state.password === "customer@123"
+    ) {
       this.props.history.push("/CustomerDashboard");
-    } else if (this.state.mailId === "store@xyz.com" && this.state.password === "store@123"){
+    } else if (
+      this.state.mailId === "store@xyz.com" &&
+      this.state.password === "store@123"
+    ) {
       this.props.history.push("/StoreDashboard");
-    }
-    else{
-      this.setState({isInValid:true});
+    } else {
+      this.setState({ isInValid: true });
     }
   };
 
@@ -106,13 +114,13 @@ class LoginScreen extends Component {
                 />
               </div>
             </div>
-            {this.state.isInValid? 
+            {this.state.isInValid ? (
               <div>
-              <span style = {{color:"red"}}>
-                Please enter valid credentials.
-              </span>
-            </div>:
-            null}
+                <span style={{ color: "red" }}>
+                  Please enter valid credentials.
+                </span>
+              </div>
+            ) : null}
             <div style={{ marginTop: "5rem" }}>
               {this.state.isLoading && <IsLoading />}
               <Button
@@ -135,6 +143,27 @@ class LoginScreen extends Component {
                     Sign Up
                   </span>
                 </span>
+              </div>
+              <br />
+              <div
+                style={{
+                  marginLeft: 20,
+                  borderColor: "#333d79ff",
+                  marginRight: 20,
+                  borderWidth: 1,
+                  padding: 10,
+                  fontSize: 12,
+                  borderStyle: "solid",
+                  textAlign: "left",
+                }}
+              >
+                <span>Use following credentials to login</span>
+                <br />
+                <span>1.Email: customer@xyz.com - Password: customer@123</span>
+                <br />
+                <span>2.Email: store@xyz.com - Password: store@123</span>
+                <br />
+                <span>3.Email: admin@xyz.com - Password: admin@123</span>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ class SplashScreen extends React.Component {
         <Layout style={{ backgroundColor: "#333d79ff" }}>
           <div
             className="centerDiv"
-            style={{ height: "95vh", flexDirection: "column" }}
+            style={{ height: "90vh", flexDirection: "column" }}
           >
             <img src={bookingWhite} style={{ height: 100 }} alt="" />
             <br />
