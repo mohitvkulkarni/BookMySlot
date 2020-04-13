@@ -20,7 +20,8 @@
     "react-sidebar": "^3.0.2",
     "react-slick": "^0.25.2",
     "search": "^1.0.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "concurrently": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
