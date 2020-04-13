@@ -13,8 +13,8 @@ class CustomerDashboard extends React.Component {
   };
 
   componentDidMount() {
-
-    fetch("http://172.31.4.77:3002/stores" )
+    
+    fetch("http://52.14.113.106:3002/stores" )
     .then(res => res.json())
     .then(res => {
       this.setState({ stores: res });
