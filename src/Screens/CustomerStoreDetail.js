@@ -18,7 +18,7 @@ class CustomerStoreDetail extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://8e49ab43.ngrok.io/stores/" + this.props.match.params.id)
+    fetch("http://29825cf8.ngrok.io/stores/" + this.props.match.params.id)
       .then((res) => res.json())
       .then((res) => {
         this.setState({ store: res });
